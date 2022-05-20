@@ -36,7 +36,6 @@
             -ms-text-size-adjust: none;
             margin: 0;
             padding: 0;
-            /* font-family: 'Open Sans', Arial, Sans-serif !important; */
         }
 
         table {
@@ -88,7 +87,6 @@
         @media only screen and (max-width: 640px) {
             body {
                 width: auto !important;
-                /* font-family: 'Open Sans', Arial, Sans-serif !important; */
             }
 
             table[class="table-inner"] {
@@ -111,7 +109,6 @@
         @media only screen and (max-width: 479px) {
             body {
                 width: auto !important;
-                /* font-family: 'Open Sans', Arial, Sans-serif !important; */
             }
 
             table[class="table-inner"] {
@@ -129,17 +126,18 @@
                 width: 100% !important;
                 height: auto !important;
             }
+            .centerMobile{
+                text-align: left;
+            }
         }
 
-        @media only screen and(max-width: 250px) {
+        @media (max-width: 200px) {
             .logo{
                 width: 30px;
             }
-            .center{
-                text-align: center;
-                justify-content: center;
+            .enterMobile{
+                text-align: center !important;
             }
-            
         }
         
         .h2-mensg{
@@ -148,6 +146,7 @@
             font-weight: bold;
             font-size: 20px;
         }
+        
     </style>
 </head>
 
@@ -701,13 +700,13 @@
                                                     <table border="0" align="center" cellpadding="0" cellspacing="0" >
                                                         <tbody>
                                                             <tr>
-                                                                <td align="center" width="200">
-                                                                    <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                                                <td width="100%">
+                                                                    <table width="100%" border="0"  cellpadding="0" cellspacing="0" class="centerMobile">
                                                                         <!--TITULO SOCIAL MEDIA-->
                                                                         <tbody>
                                                                             <tr>
                                                                                 <td style="font-family: 'Open Sans', Arial, sans-serif; font-size:16px; color:#3b3b3b;font-weight: bold;">
-                                                                                    <singleline label="title">Social Media</singleline>
+                                                                                    <singleline class="centerMobile" label="title">Social Media</singleline>
                                                                                 </td>
                                                                             </tr>
                                                                             <!--FINAL TITULO SOCIAL MEDIA-->
@@ -717,11 +716,11 @@
                                                                             <!--FACEBOOK-->
                                                                             <tr>
                                                                                 <td>
-                                                                                    <table border="0" class="center" align="left" cellpadding="0" cellspacing="0">
+                                                                                    <table border="0" class="centerMobile" cellpadding="0" cellspacing="0">
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td width="15" style="line-height:0px;"><img src="https://rapiboy.com/img/email2/Social_1.png" alt="img" width="16" style="display:block; line-height:0px; font-size:0px; border:0px;" editable="" label="social-1" data-crop="false" mc:edit="main-1-153" /></td>
-                                                                                                <td data-link-style="text-decoration:none; color:#FF646A;" data-link-color="Content Link" data-size="content" data-color="content" mc:edit="main-1-154" style="font-family: 'Open Sans', Arial, sans-serif; font-size:12px; color:#7f8c8d;padding-left: 15px;">
+                                                                                                <td data-link-style="text-decoration:none; color:#FF646A;"  data-link-color="Content Link" data-size="content" data-color="content" mc:edit="main-1-154" style="font-family: 'Open Sans', Arial, sans-serif; font-size:12px; color:#7f8c8d;padding-left: 15px;">
                                                                                                     <a href="https://es-la.facebook.com/rapiboyargentina/" target="_blank" style="color:#4a4a4a; font-weight: 600">Facebook</a>
                                                                                                 </td>
                                                                                             
@@ -737,7 +736,7 @@
                                                                             <!--INSTAGRAM-->
                                                                             <tr>
                                                                                 <td align="left">
-                                                                                    <table border="0" class="center" align="left" cellpadding="0" cellspacing="0">
+                                                                                    <table border="0" class="centerMobile" cellpadding="0" cellspacing="0">
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td width="15" style="line-height:0px;"><img src="https://rapiboy.com/img/email2/Social_2.png" alt="img" width="16" style="display:block; line-height:0px; font-size:0px; border:0px;" editable="" label="social-2" data-crop="false" mc:edit="main-1-155" /></td>
@@ -786,7 +785,7 @@
                                                                             <!--TELÉFONO-->
                                                                             <tr>
                                                                                 <td style="font-family: 'Open Sans', Arial, sans-serif; font-size:12px; color:#7f8c8d; line-height:15px; width: 100%; display: flex; align-content: center; justify-content: center;"> 
-                                                                                    <a href="tel:+5491130534929" target="_blank" style="color:#4a4a4a; font-weight: 600; display: flex; justify-content: center; align-content: center; "><img label="icon-tel" src="./icon-phone.png" style="background-color: #E0E0E0; display: flex; justify-content: center; align-content: center;" alt="img" width="20"/>Administraci&#243;n +5491130534929</a>
+                                                                                    <a href="tel:+5491130534929" target="_blank" style="color:#4a4a4a; font-weight: 600; display: flex; justify-content: center; align-content: center; "><img label="icon-tel" src="./icon-phone.png" style="line-height:15px; background-color: #E0E0E0; display: flex; justify-content: center; align-content: center;" alt="img" width="20"/>Administraci&#243;n +5491130534929</a>
                                                                                 </td>
                                                                             </tr>
                                                                             <!--FINAL TELÉFONO-->
