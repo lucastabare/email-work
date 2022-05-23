@@ -1,9 +1,54 @@
+/*Estilos:*/
 
 
 
-.imgHeader{
-    
-    height: 100%;
+/*Estilos Header:*/
+
+.divHeader{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
+.titleHeader{
+    position: relative;
+    justify-items: center;
+}
 
+.headerText{
+    position: absolute;
+    top: 150px;
+    text-align: right;
+    width: 100%;
+    height: auto;
+}
+
+.imgHeader{
+    display: block;
+}
+
+.formHeader{
+    width: 400px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    margin: 300px 0px 00px ;
+    
+}
+
+.tableForm{
+    margin: 10px;
+}
+
+.buttonHeader{
+    background-color: #292966;
+    color: #FBFDFF;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    margin-top: 5px;
+}

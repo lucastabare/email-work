@@ -13,39 +13,75 @@
 </head>
 
 <body>
+
     <!-- 1° parte-->
-    <div class="container" width="100%"> 
+
+    <div class="divHeader"> 
         <div class="titleHeader">
-            <img src="./assets/recursos/header.jpg" alt="header" class="imgHeader" style="background-size:inerit;" width="100%" height="100%" >
-            <h1>ENVÍOS ECONÓMICOS PARA TU EMPRESA </h1>
-            <h2>¡A nadie le gusta esperar!</h3>
-            <h5>Envía tus productos en menos de 24hs.</h6>
+            <div class="headerText">
+                <h1>ENVÍOS ECONÓMICOS </h1>
+                <h1>PARA TU EMPRESA</h1>
+                <h2>¡A nadie le gusta esperar!</h3>
+                <h5>Envía tus productos en menos de 24hs.</h6>
+            </div>
+            <div>
+                <img src="./assets/recursos/header.jpg" alt="header" class="imgHeader" style="background-size:inerit;"> 
+            </div>
         </div>
-        <div class="formHeader" backgroung="#fff" position="absolut">
-            <table>
+        <div class="formHeader" position="absolut">
+            <table class="tableForm">
                 <tr>
-                    <td><select type="select" placeholder="Pais" name="Pais"></td>
-                    <td><select type="select" placeholder="Ciudad" name="Ciudad"></td>
+                    <td>
+                        <select class="form-select" type="select" aria-placeholder="Pais" name="País">
+                            <option value="">"TRAER PAISES"</option>
+                        </select>
+                    </td>
+                    <td colspan="2">
+                        <select class="form-select" type="select" placeholder="Ciudad" name="Ciudad">
+                            <option value="">"TRAER CIUDAD"</option>
+                        </select>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input class="form-control" type="text" name="negocio" placeholder="Nombre de tu Negocio">
+                    </td>
+                    <td>
+                        <select class="form-select" type="select" placeholder="Empresa">
+                            <option value="">"TRAER EMPRESA"</option>
+                        </select>
+                    </td>
                 </tr>
                 <tr>
-                    <td><input type="text" name="negocio" placeholder="Nombre de tu Negocio"></td>
-                    <td><select type="select" placeholder="Empresa"></td>
+                    <td colspan="2">
+                        <input class="form-control" name="name" placeholder="Tu nombre y apelldio"/>
+                    </td>
                 </tr>
                 <tr>
-                    <td><input name="name" placeholder="Tu nombre y apelldio"></input></td>
+                    <td>
+                        <input class="form-control" type="email" name="email"placeholder="Email" id="email" >
+                    </td>
+                    <td>
+                        <input class="form-control" type="number" name="tel" placeholder="Teléfono" id="tel">
+                    </td>
                 </tr>
                 <tr>
-                    <td><input type="email" name="email"placeholder="Email" id="email" ></td>
-                    <td><input type="number" name="tel" placeholder="Telefono" id="tel"></td>
+                    <td colspan="2">
+                        <input class="form-control" type="text" name="comentarios" placeholder="Comentarios">
+                    </td>
                 </tr>
                 <tr>
-                    <td><input type="text" name="comentarios" placeholder="Comentarios"></td>
+                    <td colspan="2">
+                        <input class="form-control" type="text" placeholder="¿Como nos conociste?">
+                    </td>
                 </tr>
                 <tr>
-                    <td><input type="text" placeholder="¿Como nos conociste?"></td>
-                </tr>
-                <tr>
-                    <input type="button" value="Realiza tus envíos con Rapiboy">
+                    <td colspan="2">
+                        <input class="form-control buttonHeader" type="button" value="Realiza tus envíos con Rapiboy">
+                    </td>
                 </tr>
             </table>
         </div>
