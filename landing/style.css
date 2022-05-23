@@ -5,10 +5,7 @@
 /*Estilos Header:*/
 
 .divHeader{
-    width: 100vw;
-    height: auto;
     display: flex;
-    text-align: center;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -23,21 +20,22 @@
     position: absolute;
     top: 150px;
     text-align: right;
-    width: 100%;
-    height: auto;
+    left: 50vw;
+
 }
 
 .imgHeader{
     display: block;
+    width: 100vw;
+    height: 100vh;
+    background-size: fixed;
 }
 
 .formHeader{
-    width: 400px;
-    height: auto;
     background-color: #fff;
     border-radius: 10px;
     position: absolute;
-    margin: 300px 0px 00px ;
+    margin: 300px 0px 0px ;
     
 }
 
