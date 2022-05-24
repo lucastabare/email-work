@@ -26,6 +26,7 @@ body{
     /*OPCIONAL EFECTO SCROLL IMG HEADER
     background-attachment: fixed;*/
     overflow: hidden;
+    margin-bottom: 0;
 }
 
 .titleHeader{
@@ -39,7 +40,7 @@ body{
 }
 
 .formHeader{
-    background-color: #fff;
+    background-color: #FBFDFF;
     border-radius: 10px;
     position: relative;
 }
@@ -48,7 +49,14 @@ body{
     position: absolute;
     left: 830px;
     top:120px;
+    background-color: #FBFDFF;
+    border-radius: 10px;
+    width: auto;
+}
 
+.tableForm td{
+    padding: 8px;
+    border-radius: 10px;
 }
 
 .buttonHeader{
@@ -61,12 +69,113 @@ body{
 
 
 
+/*Estilos Recursos: */
+
+.recurso{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    padding: 20px;
+}
 
 
+.recursoCuadrito{
+    margin-bottom: 0;
+    align-items: center;
+    text-align: center;
+}
+
+.cuadritoss{
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./assets/Iconos/cuadritox.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1px solid black;
+    margin: 10px;
+    padding: 50px;
+    width: 430px;
+    height: 320px;
+}
+
+.container{
+    padding: 10px;
+}
+
+.cuadritoss col-sm{
+    margin: 5px;
+    padding: 15px;
+}
+
+.cuadritoss img{
+    width: 100px;
+}
+
+.integraciones img{
+    width: 30px !important;
+}
 
 
+/*Estilos cards: */
+.car{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.vehiculosHeader{
+    background-image: url("./assets/recursos/títulox.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 60vw;
+    width: 100%;
+    padding: 250px;
+    display: flex;
+}
+
+.titlecards{
+    text-align: left;
+    color: #FBFDFF;
+}
 
 
+.card{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.cards div{
+    width: 100%;;
+    margin: 30px;
+    padding: 10px;
+    border-radius: 15px solid ;
+    padding-right: 10px;
+}
+
+.cards img{
+    background-image: url("./assets/Iconos/cuadritox.png");
+}
+
+.vehiculosFooter{
+    display: flex;
+    background-image: url("./assets/recursos/división vehi-servi (nose).png");
+    background-repeat: no-repeat;
+    background-position: cover;
+    width: 100vw;
+    bottom: 0;
+}
+
+.vehiculosFooter img{
+    align-content: right;
+    justify-content: right;
+}
 
 
 /*.divHeader{
