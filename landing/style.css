@@ -1,40 +1,107 @@
 /*Estilos:*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+html{
+    scroll-behavior: smooth;
+}
 
+body{
+    width: 100vw;
+    height: 100vh;
+}
 
 /*Estilos Header:*/
 
-.divHeader{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+.header{
+    background-image: url("./assets/recursos/header.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    /*OPCIONAL EFECTO SCROLL IMG HEADER
+    background-attachment: fixed;*/
+    overflow: hidden;
 }
 
 .titleHeader{
-    position: relative;
-    justify-items: center;
-}
-
-.headerText{
-    position: absolute;
-    top: 150px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:right;
     text-align: right;
-    left: 50vw;
-
-}
-
-.imgHeader{
-    display: block;
-    width: 100vw;
-    height: 100vh;
-    background-size: fixed;
+    margin-right: 25vw;
 }
 
 .formHeader{
     background-color: #fff;
     border-radius: 10px;
+    position: relative;
+}
+
+.tableForm{
     position: absolute;
+    left: 830px;
+    top:120px;
+
+}
+
+.buttonHeader{
+    background-color: #292966;
+    color: #FBFDFF;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*.divHeader{
+    width: 100%;
+    height: 650px;
+    background-image: url("./assets/recursos/header.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    text-align: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+.titleHeader{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+
+}
+
+.headerText{
+
+}
+
+.imgHeader{
+}
+
+.formHeader{
+    background-color: #fff;
+    border-radius: 10px;
     margin: 300px 0px 0px ;
     
 }
@@ -49,4 +116,4 @@
     border-radius: 5px;
     padding: 5px 10px 5px 10px;
     margin-top: 5px;
-}
+}*/

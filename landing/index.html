@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- EDITAR HOMBRE E ICONO-->
     <title>Landing</title>
 
@@ -15,20 +17,16 @@
 <body>
 
     <!-- 1° parte-->
-
-    <div class="divHeader"> 
+    <header class="header">
         <div class="titleHeader">
-            <div class="headerText">
-                <h1>ENVÍOS ECONÓMICOS </h1>
-                <h1>PARA TU EMPRESA</h1>
-                <h2>¡A nadie le gusta esperar!</h3>
-                <h5>Envía tus productos en menos de 24hs.</h6>
-            </div>
-            <div>
-                <img src="./assets/recursos/header.jpg" alt="header" class="imgHeader" style="background-size:inerit;"> 
-            </div>
-        </div>
-        <div class="formHeader" position="absolut">
+            <h1>ENVÍOS ECONÓMICOS </h1>
+            <h1>PARA TU EMPRESA</h1>
+            <h2>¡A nadie le gusta esperar!</h3>
+            <h5>Envía tus productos en menos de 24hs.</h6>
+                    <!--<img src="./assets/recursos/header.jpg" alt="header" class="imgHeader">-->
+    
+
+    <div class="formHeader">
             <table class="tableForm">
                 <tr>
                     <td>
@@ -36,17 +34,16 @@
                             <option value="">"TRAER PAISES"</option>
                         </select>
                     </td>
-                    <td colspan="2">
+                    
+                    <td colspan="3">
                         <select class="form-select" type="select" placeholder="Ciudad" name="Ciudad">
                             <option value="">"TRAER CIUDAD"</option>
                         </select>
-                    </td>
-                    <td>
-                    </td>
+                    </td>     
                 </tr>
 
                 <tr>
-                    <td>
+                    <td colspan="3">
                         <input class="form-control" type="text" name="negocio" placeholder="Nombre de tu Negocio">
                     </td>
                     <td>
@@ -56,162 +53,272 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2">
-                        <input class="form-control" name="name" placeholder="Tu nombre y apelldio"/>
+                    <td colspan="4">
+                        <input class="form-control" name="name" placeholder="Tu nombre y apelldio" />
                     </td>
                 </tr>
-                <tr>
-                    <td>
-                        <input class="form-control" type="email" name="email"placeholder="Email" id="email" >
+                <tr >
+                    <td colspan="">
+                        <input class="form-control" type="email" name="email" placeholder="Email" id="email">
                     </td>
-                    <td>
+                    <td colspan="">
                         <input class="form-control" type="number" name="tel" placeholder="Teléfono" id="tel">
                     </td>
+                    
                 </tr>
                 <tr>
-                    <td colspan="2">
-                        <input class="form-control" type="text" name="comentarios" placeholder="Comentarios">
+                    <td colspan="4">
+                        <textarea class="form-control" type="text" name="comentarios" placeholder="Comentarios" style="height: 100px"></textarea>
                     </td>
+                    <td></td>
+                    
                 </tr>
                 <tr>
-                    <td colspan="2">
+                    <td colspan="4">
                         <input class="form-control" type="text" placeholder="¿Como nos conociste?">
                     </td>
+                    <td></td>
                 </tr>
                 <tr>
-                    <td colspan="2">
+                    <td colspan="4">
                         <input class="form-control buttonHeader" type="button" value="Realiza tus envíos con Rapiboy">
                     </td>
+                    <td></td>
                 </tr>
             </table>
         </div>
-    </div>
+    </header>
 
     <!--2° PARTE-->
-    <div class="recurso">
-        <div class="recursoCuadrito">
-            <div class="cuadritoss">
-                <img src="./assets/Iconos/cuadritox.png" alt="cuadritox">
-                <img src="./assets/Iconos/Recurso 3@2x.png" alt="recurso">
-                <h3>Entregas en el día</h3>
-            </div>
-
-            <div class="cuadritoss">
-                <img src="./assets/Iconos/cuadritox.png" alt="cuadritox">
-                <img src="./assets/Iconos/Recurso 4@2x.png" alt="recurso">
-                <h3>Seguimiento en tiempo real</h3>
-            </div>
-
-            <div class="cuadritoss">
-                <img src="./assets/Iconos/cuadritox.png" alt="cuadritox">
-                <img src="./assets/Iconos/Recurso 5@2x.png" alt="recurso">
-                <h3>Integraciones</h3>
-                <div class="integraciones">
-                    <img src="https://www.visa.com.ar/dam/VCOM/regional/lac/SPA/Default/Pay%20With%20Visa/promocion-mercado-libre/mercadolibre-logo-400x225.jpg" alt="logoMeLI">
-                    <img src="data:image/png;base64,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" alt="logoWoo">
-                    <img src="https://gdc.merca20.com/wp-content/uploads/2020/12/2.png" alt="logoNube">
-                    <img src="" alt="">
+    <section class="recurso">
+        <div class="container">
+            <div class="recursoCuadrito">
+                <div class="cuadritoss">
+                    <img src="./assets/Iconos/cuadritox.png" alt="cuadritox">
+                    <img src="./assets/Iconos/Recurso 3@2x.png" alt="recurso">
+                    <h3>Entregas en el día</h3>
                 </div>
-            </div>
 
-            <div class="cuadritoss">
-                <img src="./assets/Iconos/cuadritox.png" alt="cuadritox">
-                <img src="./assets/Iconos/Recurso 6@2x.png" alt="recurso">
-            </div>
+                <div class="cuadritoss">
+                    <img src="./assets/Iconos/cuadritox.png" alt="cuadritox">
+                    <img src="./assets/Iconos/Recurso 4@2x.png" alt="recurso">
+                    <h3>Seguimiento en tiempo real</h3>
+                </div>
 
-            <div class="cuadritoss">
-                <img src="./assets/Iconos/cuadritox.png" alt="cuadritox">
-                <img src="./assets/Iconos/Recurso 7@2x.png" alt="recurso">
-            </div>
+                <div class="cuadritoss">
+                    <img src="./assets/Iconos/cuadritox.png" alt="cuadritox">
+                    <img src="./assets/Iconos/Recurso 5@2x.png" alt="recurso">
+                    <h3>Integraciones</h3>
+                    <div class="integraciones">
+                        <img width="30px"
+                            src="https://www.visa.com.ar/dam/VCOM/regional/lac/SPA/Default/Pay%20With%20Visa/promocion-mercado-libre/mercadolibre-logo-400x225.jpg"
+                            alt="logoMeLI">
+                        <img width="30px"
+                            src="data:image/png;base64,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"
+                            alt="logoWoo">
+                        <img width="30px" src="https://gdc.merca20.com/wp-content/uploads/2020/12/2.png" alt="logoNube">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
 
-            <div class="cuadritoss">
-                <img src="./assets/Iconos/cuadritox.png" alt="cuadritox">
-                <img src="./assets/Iconos/Recurso 8@2x.png" alt="recurso">
-            </div>
+                <div class="cuadritoss">
+                    <img src="./assets/Iconos/cuadritox.png" alt="cuadritox">
+                    <img src="./assets/Iconos/Recurso 6@2x.png" alt="recurso">
+                </div>
 
+                <div class="cuadritoss">
+                    <img src="./assets/Iconos/cuadritox.png" alt="cuadritox">
+                    <img src="./assets/Iconos/Recurso 7@2x.png" alt="recurso">
+                </div>
+
+                <div class="cuadritoss">
+                    <img src="./assets/Iconos/cuadritox.png" alt="cuadritox">
+                    <img src="./assets/Iconos/Recurso 8@2x.png" alt="recurso">
+                </div>
+
+            </div>
         </div>
-    </div>
+    </section>
 
     <!--3°PARTE-->
-    <div class="container">
-        <div class="vehiculosHeader">
-            <h2>Vehículos según tu necesidad</h2>
-            <img src="./assets/recursos/títulox.png" alt="tituloVehiculo">
-        </div>
-        <div class="vehiculosBody">
-
-            <div>
-                <img src="./assets/Iconos/cuadritox.png" alt="vehiculos">
-                <img src="./assets/Iconos/moto@2x.png" alt="">
-                <h3>Moto</h3>
+    <section class="card contenedor">
+        <div width="100%" class="container">
+            <div class="vehiculosHeader">
+                <h2>Vehículos según tu necesidad</h2>
+                <img width="100%" src="./assets/recursos/títulox.png" alt="tituloVehiculo">
             </div>
+            <div class="cards">
+                <article class="card">
+                    <img src="./assets/Iconos/cuadritox.png" alt="vehiculos">
+                    <img src="./assets/Iconos/moto@2x.png" alt="">
+                    <h3>Moto</h3>
+                </article>
 
-            <div>
-                <img src="./assets/Iconos/cuadritox.png" alt="vehiculos">
-                <img src="./assets/Iconos/utilitario chico@2x.png" alt="">
-                <h3>Utilitario chico</h3>
+                <article class="card">
+                    <img src="./assets/Iconos/cuadritox.png" alt="vehiculos">
+                    <img src="./assets/Iconos/utilitario chico@2x.png" alt="">
+                    <h3>Utilitario chico</h3>
+                </article>
+
+                <article class="card">
+                    <img src="./assets/Iconos/cuadritox.png" alt="vehiculos">
+                    <img src="./assets/Iconos/utilitario grande@2x.png" alt="">
+                    <h3>Utilitario grande</h3>
+                </article>
+
             </div>
-
-            <div>
-                <img src="./assets/Iconos/cuadritox.png" alt="vehiculos">
-                <img src="./assets/Iconos/utilitario grande@2x.png" alt="">
-                <h3>Utilitario grande</h3>
+            <div class="vehiculosFooter">
+                <img src="./assets/recursos/vehículos.png" alt="">
+                <img width="100%" src="./assets/recursos/división vehi-servi (nose).png" alt="">
             </div>
+        </div>
+    </section>
 
-        </div>
-        <div class="vehiculosFooter">
-            <img src="./assets/recursos/vehículos.png" alt="">
-            <img src="./assets/recursos/división vehi-servi (nose).png" alt="">
-        </div>
-    </div>
 
     <!--4°PARTE-->
-    <div class="container">
-        <div class="titleServicio">
-            <h2>Servicios que tenemos para ofrecerte</h2>
-            <img src="./assets/recursos/títulox.png" alt="servicios">
-            <img src="./assets/recursos/servicios.jpg" alt="servicios">
+    <section>
+        <div class="container">
+            <div class="titleServicio">
+                <h2>Servicios que tenemos para ofrecerte</h2>
+                <img width="100%" src="./assets/recursos/títulox.png" alt="servicios">
+                <img src="./assets/recursos/servicios.jpg" alt="servicios">
+            </div>
+
+            <div class="servicios">
+                <article>
+
+                    <h3>Programación de envíos</h3>
+                    <h6>Buscamos, retiramos y entregamos</h6>
+                    <img width="100%" src="./assets/recursos/servicios.png" alt="serviciosTitle">
+                </article>
+
+                <article>
+                    <h3>Repartidores dedicados</h3>
+                    <h6>Repartidor para tu negocio</h6>
+                    <img width="100%" src="./assets/recursos/servicios.png" alt="serviciosTitle">
+                </article>
+
+                <article>
+                    <h3>Envíos flex / En el día</h3>
+                    <h6>Envíos en menos de 24hs</h6>
+                    <img width="100%" src="./assets/recursos/servicios.png" alt="serviciosTitle">
+                </article>
+
+            </div>
         </div>
-        
-        <div class="servicios">
-            <div>
-                <h3>Programación de envíos</h3>
-                <h6>Buscamos, retiramos y entregamos</h6>
-                <img src="./assets/recursos/servicios.png" alt="serviciosTitle">
-            </div>
-            <div>
-                <h3>Repartidores dedicados</h3>
-                <h6>Repartidor para tu negocio</h6>
-                <img src="./assets/recursos/servicios.png" alt="serviciosTitle">
-            </div>
-            <div>
-                <h3>Envíos flex / En el día</h3>
-                <h6>Envíos en menos de 24hs</h6>
-                <img src="./assets/recursos/servicios.png" alt="serviciosTitle">
-            </div>
-        </div>
-    </div>
+    </section>
 
     <!--5°Parte-->
     <div class="preguntasFrecuentes">
-        <h1>Preguntas </h1>
+        <section class="container-fluid gris25-bg">
+            <div class="container pt-3 pb-3">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <h2 class="text-center morado-co" data-tdp="hr23">Preguntas Frecuentes</h2>
+                        <hr class="mx-auto d-block morado-bor mt-2">
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 bg-ayuda">
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 pr-2">
+                        <div class="accordion" id="Restaurante">
+                            <div class="card">
+                                <div class="card-header">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        data-target="#collpase1" aria-expanded="true" aria-controls="collpase1"
+                                        data-tdp="hr24">¿Cómo aseguran que siempre hay un repartidor disponible para mi
+                                        local?</button>
+                                </div>
+                                <div id="collpase1" class="collapse show" data-parent="#Restaurante">
+                                    <p class="mt-1" data-tdp="hr25">Con base de refuerzos dispuesta por cada zona que
+                                        operamos, donde tenemos repartidores disponibles por cualquier imprevisto que
+                                        pueda surgir. Aseguramos el servicio al 100% y no tiene costo extra.</p>
+                                </div>
+                            </div>
+                            <div class="card mt-2">
+                                <div class="card-header">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        data-target="#collpase2" aria-expanded="true" aria-controls="collpase2"
+                                        data-tdp="hr26">¿Es obligatorio pedir repartidores todo los días?</button>
+                                </div>
+                                <div id="collpase2" class="collapse" data-parent="#Restaurante">
+                                    <p class="mt-1" data-tdp="hr27">El mínimo es de 4 noches por semana, puedes
+                                        programarlas a medida, e ir cambiandolas a gusto.</p>
+                                </div>
+                            </div>
+                            <div class="card mt-2">
+                                <div class="card-header">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        data-target="#collpase3" aria-expanded="true" aria-controls="collpase3"
+                                        data-tdp="hr28">¿Qué es un turno?</button>
+                                </div>
+                                <div id="collpase3" class="collapse" data-parent="#Restaurante">
+                                    <p class="mt-1" data-tdp="hr29">Es una franja horaria donde el repartidor estará a
+                                        disposición en tu local. Puede ser turno mañana o turno noche, donde la franja
+                                        horaria puede variar según tu conveniencia.</p>
+                                </div>
+                            </div>
+                            <div class="card mt-2">
+                                <div class="card-header">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        data-target="#collpase4" aria-expanded="true" aria-controls="collpase4"
+                                        data-tdp="hr30">¿Por qué reservar turnos?</button>
+                                </div>
+                                <div id="collpase4" class="collapse" data-parent="#Restaurante">
+                                    <p class="mt-1" data-tdp="hr31">Para que puedas gestionar tu semana y los
+                                        repartidores sepan con anticipación cuándo ir. Los turnos puedes reservarlos y
+                                        cancelarlos con 72hs de anticipación.</p>
+                                </div>
+                            </div>
+                            <div class="card mt-2">
+                                <div class="card-header">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        data-target="#collpase5" aria-expanded="true" aria-controls="collpase5"
+                                        data-tdp="hr32">¿Cómo se paga el servicio?</button>
+                                </div>
+                                <div id="collpase5" class="collapse" data-parent="#Restaurante">
+                                    <p class="mt-1" data-tdp="hr33">Tenemos distintos medios de pago como tarjeta de
+                                        crédito, débito, mercadopago y rapipago.</p>
+                                </div>
+                            </div>
+                            <div class="card mt-2">
+                                <div class="card-header">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        data-target="#collpase6" aria-expanded="true" aria-controls="collpase6"
+                                        data-tdp="hr34">¿Puedo saber dónde está el repartidor?</button>
+                                </div>
+                                <div id="collpase6" class="collapse" data-parent="#Restaurante">
+                                    <p class="mt-1" data-tdp="hr35">Durante el turno podrás ver la ubicación en tiempo
+                                        real del repartidor. También tienes la opción de marcar 'aun no llega' y 'llegó'
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <p>poner carrucel
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 
+    <!--7° PARTE  -->
 
-</body>
+    <section class="footer">
+        <img src="./assets/recursos/footer.jpg" alt="">
+        <h2>Empezá ahora.</h2>
+        <h6>Se parte de la comunidad Rapiboy.</h6>
+
+        <hr class="mx-auto d-block morado-bor mt-2">
+        <h6>Escala tu negocio con esta tecnología.</h6>
+        <input type="button" value="Probá RAPIBOY >">
+    </section>
+
     <!--6°PARTE-->
     <footer>
-        <div class="footer">
-            <img src="./assets/recursos/footer.jpg" alt="">
-            <h2>Empezá ahora.</h2>
-            <h6>Se parte de la comunidad Rapiboy.</h6>
-
-            <!--LINEA DE ESPACIO AGREGAR-->
-            <h6>Escala tu negocio con esta tecnología.</h6>
-            <input type="button" value="Probá RAPIBOY >">
-        </div>
-        <div class="footerEnd">
-            <img src="https://rapiboy.com/img/email2/logo.png" alt="logoRapiboy">
+        <div class="container">
+            <img width="100%" src="https://rapiboy.com/img/email2/logo.png" alt="logoRapiboy">
             <tr>
                 <td></td>
                 <td></td>
@@ -219,6 +326,13 @@
             </tr>
         </div>
     </footer>
+
+
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/f17f895862.js" crossorigin="anonymous"></script>
+</body>
+
 </html>
