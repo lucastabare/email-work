@@ -180,6 +180,7 @@ body{
 .servicios{
     width: 100%;
     height: 100vh;
+    position: relative;
 }
 
 .titleServicios{
@@ -187,14 +188,15 @@ body{
     background-position: left;
     background-repeat: no-repeat;
     background-size: 60vw;
-    width: 100%;
-    padding: 250px;
+    padding:200px;
     display: flex;
     color: #FAFAFA;
+    top: 300px;
 }
 
 .serviciosInfo{
     display: flex;
+    padding-bottom: 180px;
 }
 
 .infoServicios{
@@ -206,11 +208,18 @@ body{
     flex-direction: left;
 }
 
+.imgServicios img{
+    height: 900px;
+    width: auto;
+    position: relative;
+}
+
 .serviciosItem{
     background-image: url("./assets/recursos/servicios.png");
     background-repeat: no-repeat;
-    background-size: 50vw;
+    background-size: 40vw;
     padding: 70px;
+    text-align: center;
 }
 
 
