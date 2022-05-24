@@ -10,15 +10,14 @@ html{
 }
 
 body{
-    width: 100vw;
-    height: 100vh;
+    background-color: #FBFDFF;
 }
 
-/*Estilos Header:*/
+/*Estilos Header: 1°PARTE */
 
 .header{
     background-image: url("./assets/recursos/header.jpg");
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -69,10 +68,10 @@ body{
 
 
 
-/*Estilos Recursos: */
+/*Estilos Recursos: 2°PARTE */
 
 .recurso{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -120,10 +119,10 @@ body{
 }
 
 
-/*Estilos cards: */
+/*Estilos cards: 3°PARTE */
 .car{
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 
 }
@@ -140,9 +139,8 @@ body{
 
 .titlecards{
     text-align: left;
-    color: #FBFDFF;
+    color: #FAFAFA;
 }
-
 
 .card{
     text-align: center;
@@ -164,17 +162,113 @@ body{
 }
 
 .vehiculosFooter{
-    display: flex;
-    background-image: url("./assets/recursos/división vehi-servi (nose).png");
+    background-image: url("./assets/recursos/división\ vehi-servi\ \(nose\).png");
     background-repeat: no-repeat;
     background-position: cover;
     width: 100vw;
-    bottom: 0;
 }
 
 .vehiculosFooter img{
     align-content: right;
     justify-content: right;
+}
+
+
+
+/*Estilos Servicio: 4° PARTE: */
+
+.servicios{
+    width: 100%;
+    height: 100vh;
+}
+
+.titleServicios{
+    background-image: url("./assets/recursos/títulox.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 60vw;
+    width: 100%;
+    padding: 250px;
+    display: flex;
+    color: #FAFAFA;
+}
+
+.serviciosInfo{
+    display: flex;
+}
+
+.infoServicios{
+    width: 50%;
+    flex-direction: right;
+}
+
+.imgServicios{
+    flex-direction: left;
+}
+
+.serviciosItem{
+    background-image: url("./assets/recursos/servicios.png");
+    background-repeat: no-repeat;
+    background-size: 50vw;
+    padding: 70px;
+}
+
+
+/*Estilos Preguntas frecuentes: 5°PARTE: */
+
+.preguntasFrecuentes{
+    width: 100%;
+    height: 100vh;
+    background-color: #FAFAFA;
+}
+
+
+
+
+
+
+
+
+
+/*Footer 6°PARTE */
+
+.footer{
+    background-image: url("./assets/recursos/footer.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 100%;
+}
+
+.titleFooter{
+    text-align: left;
+    font-weight: 300;
+}
+
+.titleFooter input{
+    background-color: #292966;
+    color: #FAFAFA;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    margin-top: 5px;
+
+}
+
+.morado-bor{
+
+}
+
+
+/* FooterEnd 7°PARTE: */
+
+.footerEnd{
+    height: 120px;
+    background-color: #33A2CC;
+    display: flex;
+}
+
+.footerEnd img{
+    height: 30px;
 }
 
 
