@@ -12,7 +12,19 @@ html{
 body{
     background-color: #FBFDFF;
 }
+#divH1 {
+    margin-top: -50px;
+}
 
+.morado-bg .svg {
+    padding-bottom: 200px !important;
+}
+
+@media only screen and (max-width: 600px) {
+    #divH1 {
+        margin-top: unset;
+    }
+}
 /*Estilos Header: 1°PARTE */
 
 .header{
@@ -26,6 +38,7 @@ body{
     background-attachment: fixed;*/
     overflow: hidden;
     margin-bottom: 0;
+    
 }
 
 .titleHeader{
@@ -36,6 +49,7 @@ body{
     align-items:right;
     text-align: right;
     margin-right: 25vw;
+    
 }
 
 .formHeader{
@@ -166,14 +180,9 @@ body{
     background-repeat: no-repeat;
     background-position: cover;
     width: 100vw;
+    background-image: url(./assets/recursos/vehículos.png);
+    background-position: bottom right;
 }
-
-.vehiculosFooter img{
-    align-content: right;
-    justify-content: right;
-}
-
-
 
 /*Estilos Servicio: 4° PARTE: */
 
