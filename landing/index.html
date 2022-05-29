@@ -9,19 +9,19 @@
     <meta name="copyright" content="Rapiboy">
     <meta name="author" content="Rapiboy">
     <meta name="application-name" content="Rapiboy">
-    <link rel="icon" type="image/svg+xml" href="/Content/publica3/assets/favicon/favicon.svg" sizes="any">
-    <link rel="icon" type="image/png" href="/Content/publica3/assets/favicon/favicon.png" sizes="128x128">
-
-    <!-- CSS only -->
+    <link rel="icon" type="image/svg+xml" href="https://rapiboy.com/Content/publica3/assets/favicon/favicon.svg"
+        sizes="any">
+    <link rel="icon" type="image/png" href="https://rapiboy.com/Content/publica3/assets/favicon/favicon.png"
+        sizes="128x128">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <!-- EDITAR HOMBRE E ICONO-->
     <title> Rapiboy | Servicio de delivery para restaurantes en Argentina.</title>
     <meta name="description"
         content="¿Está su restaurante preparado para ofrecer servicio de delivery en Argentina? Regístrese ahora de forma gratuita.">
     <meta property="og:image" content="https://rapiboy.com/img/meta/rapiboy-web-metaimage-rapiboy.jpg">
-    <link rel="stylesheet" href="./all.css" type="text/css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="./style.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -95,27 +95,27 @@
             </div>
         </div>
     </section>
- 
+
     <!--2° PARTE-->
     <section class="recurso">
         <div class="container py-14 -py-md-16">
             <div class="row gy-6">
                 <div class="row gy-6">
-                    <div class="col-md-6 col-lg-3">
+                    <div class="col-md-6 col-lg-3" data-aos="zoom-in-right" data-aos-delay="300">
                         <div class="cuadritoss">
                             <img src="./assets/Iconos/Recurso 5@2x.png" alt="cuadritox">
                             <h3>Entregas en el día</h3>
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-3">
+                    <div class="col-md-6 col-lg-3" data-aos="zoom-in-up" data-aos-delay="300">
                         <div class="cuadritoss">
                             <img src="./assets/Iconos/Recurso 7@2x.png" alt="recurso">
                             <h3>Seguimiento en tiempo real</h3>
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-3">
+                    <div class="col-md-6 col-lg-3" data-aos="zoom-in-left" data-aos-delay="300">
                         <div class="cuadritoss">
                             <img src="./assets/Iconos/Recurso 6@2x.png" alt="recurso">
                             <h3>Integraciones</h3>
@@ -133,19 +133,22 @@
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-3">
+                    <div class="col-md-6 col-lg-3" data-aos="zoom-out-right" data-aos-easing="ease-in-back"
+                        data-aos-delay="600" data-aos-offset="0">
                         <div class="cuadritoss">
                             <img src="./assets/Iconos/Recurso 4@2x.png" alt="recurso">
                             <h3>Comunicación con tu cliente</h3>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3">
+                    <div class="col-md-6 col-lg-3" data-aos="zoom-out-down" data-aos-easing="ease-in-back"
+                        data-aos-delay="600" data-aos-offset="0">
                         <div class="cuadritoss">
                             <img src="./assets/Iconos/Recurso 3@2x.png" alt="recurso">
                             <h3>Notificaciones de estado</h3>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3">
+                    <div class="col-md-6 col-lg-3" data-aos="zoom-out-left" data-aos-easing="ease-in-back"
+                        data-aos-delay="600" data-aos-offset="0">
                         <div class="cuadritoss">
                             <img src="./assets/Iconos/Recurso 8@2x.png" alt="recurso">
                             <h3>Todos los medios de pago</h3>
@@ -186,13 +189,13 @@
 
     <!--4°PARTE-->
     <section class="servicios">
-    
+
         <div class="serviciosHeader">
             <h2 class="titleServicios">Servicios que tenemos para ofrecerte</h2>
         </div>
-    
+
         <div class="serviciosInfo">
-    
+
             <div class="imgServicios">
                 <img height="600px" src="./assets/recursos/servicios.jpg" alt="servicios">
             </div>
@@ -202,24 +205,24 @@
                     <h3>Programación de envíos</h3>
                     <h6>Buscamos, retiramos y entregamos</h6>
                 </div>
-    
+
                 <div class="serviciosItem">
                     <h3>Repartidores dedicados</h3>
                     <h6>Repartidor para tu negocio</h6>
                 </div>
-    
+
                 <div class="serviciosItem">
                     <h3>Envíos flex / En el día</h3>
                     <h6>Envíos en menos de 24hs</h6>
                     <!-- </div>-->
                 </div>
             </div>
-    
+
         </div>
     </section>
 
     <!--5°Parte-->
-    <!--
+
     <section class="container-fluid gris25-bg">
         <div class="container pt-3 pb-3">
             <div class="row">
@@ -233,82 +236,68 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 pr-2">
                     <div class="accordion" id="Restaurante">
-                        <div class="card">
-                            <div class="card-header">
-                                <button class="btn btn-link" type="button" data-toggle="collapse"
-                                    data-target="#collpase1" aria-expanded="true" aria-controls="collpase1"
-                                    data-tdp="hr24">¿Cómo aseguran que siempre hay un repartidor disponible para mi
-                                    local?</button>
-                            </div>
-                            <div id="collpase1" class="collapse show" data-parent="#Restaurante">
-                                <p class="mt-1" data-tdp="hr25">Con base de refuerzos dispuesta por cada zona que
-                                    operamos, donde tenemos repartidores disponibles por cualquier imprevisto que pueda
-                                    surgir. Aseguramos el servicio al 100% y no tiene costo extra.</p>
-                            </div>
-                        </div>
                         <div class="card mt-2">
                             <div class="card-header">
                                 <button class="btn btn-link" type="button" data-toggle="collapse"
                                     data-target="#collpase2" aria-expanded="true" aria-controls="collpase2"
-                                    data-tdp="hr26">¿Es obligatorio pedir repartidores todo los días?</button>
+                                    data-tdp="hr26">¿Cómo se cotiza el servicio?</button>
                             </div>
                             <div id="collpase2" class="collapse" data-parent="#Restaurante">
-                                <p class="mt-1" data-tdp="hr27">El mínimo es de 4 noches por semana, puedes programarlas
-                                    a medida, e ir cambiandolas a gusto.</p>
+                                <p class="mt-1" data-tdp="hr27">Las tarifas son únicas por zona y volumen para envíos
+                                    programados, para repartidores dedicados las tarifas son por hora.
+                                </p>
                             </div>
                         </div>
                         <div class="card mt-2">
                             <div class="card-header">
                                 <button class="btn btn-link" type="button" data-toggle="collapse"
                                     data-target="#collpase3" aria-expanded="true" aria-controls="collpase3"
-                                    data-tdp="hr28">¿Qué es un turno?</button>
+                                    data-tdp="hr28">¿Es sólo un servicio para empresas?</button>
                             </div>
                             <div id="collpase3" class="collapse" data-parent="#Restaurante">
-                                <p class="mt-1" data-tdp="hr29">Es una franja horaria donde el repartidor estará a
-                                    disposición en tu local. Puede ser turno mañana o turno noche, donde la franja
-                                    horaria puede variar según tu conveniencia.</p>
+                                <p class="mt-1" data-tdp="hr29">Es un servicio para empresas, ecommerce y distintos
+                                    tipos de negocios con envíos frecuentes de productos.</p>
                             </div>
                         </div>
                         <div class="card mt-2">
                             <div class="card-header">
                                 <button class="btn btn-link" type="button" data-toggle="collapse"
                                     data-target="#collpase4" aria-expanded="true" aria-controls="collpase4"
-                                    data-tdp="hr30">¿Por qué reservar turnos?</button>
+                                    data-tdp="hr30">¿Cómo se cobra?</button>
                             </div>
                             <div id="collpase4" class="collapse" data-parent="#Restaurante">
-                                <p class="mt-1" data-tdp="hr31">Para que puedas gestionar tu semana y los repartidores
-                                    sepan con anticipación cuándo ir. Los turnos puedes reservarlos y cancelarlos con
-                                    72hs de anticipación.</p>
+                                <p class="mt-1" data-tdp="hr31">Solo pagas por repartidor dedicado o por cada envío
+                                    realizado exitosamente,según el servicio que elijas.</p>
                             </div>
                         </div>
                         <div class="card mt-2">
                             <div class="card-header">
                                 <button class="btn btn-link" type="button" data-toggle="collapse"
                                     data-target="#collpase5" aria-expanded="true" aria-controls="collpase5"
-                                    data-tdp="hr32">¿Cómo se paga el servicio?</button>
+                                    data-tdp="hr32">¿Qué es el seguimiento online?</button>
                             </div>
                             <div id="collpase5" class="collapse" data-parent="#Restaurante">
-                                <p class="mt-1" data-tdp="hr33">Tenemos distintos medios de pago como tarjeta de
-                                    crédito, débito, mercadopago y rapipago.</p>
+                                <p class="mt-1" data-tdp="hr33">Es la Trazabilidad online de envíos y notificaciones a
+                                    tus clientes sobre los cambios de estados de su compra.</p>
                             </div>
                         </div>
                         <div class="card mt-2">
                             <div class="card-header">
                                 <button class="btn btn-link" type="button" data-toggle="collapse"
                                     data-target="#collpase6" aria-expanded="true" aria-controls="collpase6"
-                                    data-tdp="hr34">¿Puedo saber dónde está el repartidor?</button>
+                                    data-tdp="hr34">Servicios</button>
                             </div>
                             <div id="collpase6" class="collapse" data-parent="#Restaurante">
-                                <p class="mt-1" data-tdp="hr35">Durante el turno podrás ver la ubicación en tiempo real
-                                    del repartidor. También tienes la opción de marcar 'aun no llega' y 'llegó'</p>
+                                <p class="mt-1" data-tdp="hr35">Programa retiros diarios o para algunos días de la
+                                    semana, nosotros retiramos y enviamos el mismo día.</p>
                             </div>
                         </div>
                     </div>
-                    <a class="btn btn-outline-primary btn-lg mt-2" href="/global/restaurante" target="_blank"
-                        role="button" data-tdp="hr36">Habla con un comercial</a>
                 </div>
             </div>
         </div>
+
+
     </section>
     <hidden data-tdp-file="home_carruselmarcas.json" data-tdp-ignore=""></hidden>
     <section class="container-fluid pb-3">
@@ -328,7 +317,7 @@
                                 style="width: 222px;">
                                 <div>
                                     <div style="width: 100%; display: inline-block;">
-                                        <img src="/img/LogosMarcas/Restaurante/zele.png">
+                                        <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/zele.png">
                                     </div>
                                 </div>
                             </div>
@@ -336,7 +325,7 @@
                                 style="width: 222px;">
                                 <div>
                                     <div style="width: 100%; display: inline-block;">
-                                        <img src="/img/LogosMarcas/Restaurante/grido.png">
+                                        <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/grido.png">
                                     </div>
                                 </div>
                             </div>
@@ -344,7 +333,7 @@
                                 style="width: 222px;">
                                 <div>
                                     <div style="width: 100%; display: inline-block;">
-                                        <img src="/img/LogosMarcas/Restaurante/kfc.png">
+                                        <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/kfc.png">
                                     </div>
                                 </div>
                             </div>
@@ -352,7 +341,7 @@
                                 style="width: 222px;">
                                 <div>
                                     <div style="width: 100%; display: inline-block;">
-                                        <img src="/img/LogosMarcas/Restaurante/subway.png">
+                                        <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/subway.png">
                                     </div>
                                 </div>
                             </div>
@@ -360,7 +349,7 @@
                                 style="width: 222px;">
                                 <div>
                                     <div style="width: 100%; display: inline-block;">
-                                        <img src="/img/LogosMarcas/Restaurante/wendys.png">
+                                        <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/wendys.png">
                                     </div>
                                 </div>
                             </div>
@@ -368,153 +357,152 @@
                                 style="width: 222px;">
                                 <div>
                                     <div style="width: 100%; display: inline-block;">
-                                        <img src="/img/LogosMarcas/Restaurante/kfc.png">
+                                        <img src=https://rapiboy.com/img/LogosMarcas/Restaurante/kfc.png"> </div> </div>
+                                            </div> <div class="slick-slide" data-slick-index="1" aria-hidden="true"
+                                            tabindex="-1" style="width: 222px;">
+                                        <div>
+                                            <div style="width: 100%; display: inline-block;">
+                                                <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/mostaza.png">
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1"
-                                style="width: 222px;">
-                                <div>
-                                    <div style="width: 100%; display: inline-block;">
-                                        <img src="/img/LogosMarcas/Restaurante/mostaza.png">
+                                    <div class="slick-slide" data-slick-index="2" aria-hidden="true" tabindex="-1"
+                                        style="width: 222px;">
+                                        <div>
+                                            <div style="width: 100%; display: inline-block;">
+                                                <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/wendys.png">
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="slick-slide" data-slick-index="2" aria-hidden="true" tabindex="-1"
-                                style="width: 222px;">
-                                <div>
-                                    <div style="width: 100%; display: inline-block;">
-                                        <img src="/img/LogosMarcas/Restaurante/wendys.png">
+                                    <div class="slick-slide slick-current slick-active" data-slick-index="3"
+                                        aria-hidden="false" style="width: 222px;">
+                                        <div>
+                                            <div style="width: 100%; display: inline-block;">
+                                                <img
+                                                    src="https://rapiboy.com/img/LogosMarcas/Restaurante/sushiworld.png">
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="slick-slide slick-current slick-active" data-slick-index="3" aria-hidden="false"
-                                style="width: 222px;">
-                                <div>
-                                    <div style="width: 100%; display: inline-block;">
-                                        <img src="/img/LogosMarcas/Restaurante/sushiworld.png">
+                                    <div class="slick-slide slick-active" data-slick-index="4" aria-hidden="false"
+                                        style="width: 222px;">
+                                        <div>
+                                            <div style="width: 100%; display: inline-block;">
+                                                <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/zele.png">
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="slick-slide slick-active" data-slick-index="4" aria-hidden="false"
-                                style="width: 222px;">
-                                <div>
-                                    <div style="width: 100%; display: inline-block;">
-                                        <img src="/img/LogosMarcas/Restaurante/zele.png">
+                                    <div class="slick-slide slick-active" data-slick-index="5" aria-hidden="false"
+                                        style="width: 222px;">
+                                        <div>
+                                            <div style="width: 100%; display: inline-block;">
+                                                <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/grido.png">
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="slick-slide slick-active" data-slick-index="5" aria-hidden="false"
-                                style="width: 222px;">
-                                <div>
-                                    <div style="width: 100%; display: inline-block;">
-                                        <img src="/img/LogosMarcas/Restaurante/grido.png">
+                                    <div class="slick-slide slick-active" data-slick-index="6" aria-hidden="false"
+                                        style="width: 222px;">
+                                        <div>
+                                            <div style="width: 100%; display: inline-block;">
+                                                <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/kfc.png">
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="slick-slide slick-active" data-slick-index="6" aria-hidden="false"
-                                style="width: 222px;">
-                                <div>
-                                    <div style="width: 100%; display: inline-block;">
-                                        <img src="/img/LogosMarcas/Restaurante/kfc.png">
+                                    <div class="slick-slide slick-active" data-slick-index="7" aria-hidden="false"
+                                        style="width: 222px;">
+                                        <div>
+                                            <div style="width: 100%; display: inline-block;">
+                                                <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/subway.png">
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="slick-slide slick-active" data-slick-index="7" aria-hidden="false"
-                                style="width: 222px;">
-                                <div>
-                                    <div style="width: 100%; display: inline-block;">
-                                        <img src="/img/LogosMarcas/Restaurante/subway.png">
+                                    <div class="slick-slide" data-slick-index="8" aria-hidden="true" tabindex="-1"
+                                        style="width: 222px;">
+                                        <div>
+                                            <div style="width: 100%; display: inline-block;">
+                                                <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/wendys.png">
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="slick-slide" data-slick-index="8" aria-hidden="true" tabindex="-1"
-                                style="width: 222px;">
-                                <div>
-                                    <div style="width: 100%; display: inline-block;">
-                                        <img src="/img/LogosMarcas/Restaurante/wendys.png">
+                                    <div class="slick-slide slick-cloned" data-slick-index="9" aria-hidden="true"
+                                        tabindex="-1" style="width: 222px;">
+                                        <div>
+                                            <div style="width: 100%; display: inline-block;">
+                                                <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/kfc.png">
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="slick-slide slick-cloned" data-slick-index="9" aria-hidden="true" tabindex="-1"
-                                style="width: 222px;">
-                                <div>
-                                    <div style="width: 100%; display: inline-block;">
-                                        <img src="/img/LogosMarcas/Restaurante/kfc.png">
+                                    <div class="slick-slide slick-cloned" data-slick-index="10" aria-hidden="true"
+                                        tabindex="-1" style="width: 222px;">
+                                        <div>
+                                            <div style="width: 100%; display: inline-block;">
+                                                <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/mostaza.png">
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="slick-slide slick-cloned" data-slick-index="10" aria-hidden="true" tabindex="-1"
-                                style="width: 222px;">
-                                <div>
-                                    <div style="width: 100%; display: inline-block;">
-                                        <img src="/img/LogosMarcas/Restaurante/mostaza.png">
+                                    <div class="slick-slide slick-cloned" data-slick-index="11" aria-hidden="true"
+                                        tabindex="-1" style="width: 222px;">
+                                        <div>
+                                            <div style="width: 100%; display: inline-block;">
+                                                <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/wendys.png">
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="slick-slide slick-cloned" data-slick-index="11" aria-hidden="true" tabindex="-1"
-                                style="width: 222px;">
-                                <div>
-                                    <div style="width: 100%; display: inline-block;">
-                                        <img src="/img/LogosMarcas/Restaurante/wendys.png">
+                                    <div class="slick-slide slick-cloned" data-slick-index="12" aria-hidden="true"
+                                        tabindex="-1" style="width: 222px;">
+                                        <div>
+                                            <div style="width: 100%; display: inline-block;">
+                                                <img
+                                                    src="https://rapiboy.com/img/LogosMarcas/Restaurante/sushiworld.png">
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="slick-slide slick-cloned" data-slick-index="12" aria-hidden="true" tabindex="-1"
-                                style="width: 222px;">
-                                <div>
-                                    <div style="width: 100%; display: inline-block;">
-                                        <img src="/img/LogosMarcas/Restaurante/sushiworld.png">
+                                    <div class="slick-slide slick-cloned" data-slick-index="13" aria-hidden="true"
+                                        tabindex="-1" style="width: 222px;">
+                                        <div>
+                                            <div style="width: 100%; display: inline-block;">
+                                                <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/zele.png">
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="slick-slide slick-cloned" data-slick-index="13" aria-hidden="true" tabindex="-1"
-                                style="width: 222px;">
-                                <div>
-                                    <div style="width: 100%; display: inline-block;">
-                                        <img src="/img/LogosMarcas/Restaurante/zele.png">
+                                    <div class="slick-slide slick-cloned" data-slick-index="14" aria-hidden="true"
+                                        tabindex="-1" style="width: 222px;">
+                                        <div>
+                                            <div style="width: 100%; display: inline-block;">
+                                                <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/grido.png">
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="slick-slide slick-cloned" data-slick-index="14" aria-hidden="true" tabindex="-1"
-                                style="width: 222px;">
-                                <div>
-                                    <div style="width: 100%; display: inline-block;">
-                                        <img src="/img/LogosMarcas/Restaurante/grido.png">
+                                    <div class="slick-slide slick-cloned" data-slick-index="15" aria-hidden="true"
+                                        tabindex="-1" style="width: 222px;">
+                                        <div>
+                                            <div style="width: 100%; display: inline-block;">
+                                                <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/kfc.png">
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="slick-slide slick-cloned" data-slick-index="15" aria-hidden="true" tabindex="-1"
-                                style="width: 222px;">
-                                <div>
-                                    <div style="width: 100%; display: inline-block;">
-                                        <img src="/img/LogosMarcas/Restaurante/kfc.png">
+                                    <div class="slick-slide slick-cloned" data-slick-index="16" aria-hidden="true"
+                                        tabindex="-1" style="width: 222px;">
+                                        <div>
+                                            <div style="width: 100%; display: inline-block;">
+                                                <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/subway.png">
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="slick-slide slick-cloned" data-slick-index="16" aria-hidden="true" tabindex="-1"
-                                style="width: 222px;">
-                                <div>
-                                    <div style="width: 100%; display: inline-block;">
-                                        <img src="/img/LogosMarcas/Restaurante/subway.png">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="slick-slide slick-cloned" data-slick-index="17" aria-hidden="true" tabindex="-1"
-                                style="width: 222px;">
-                                <div>
-                                    <div style="width: 100%; display: inline-block;">
-                                        <img src="/img/LogosMarcas/Restaurante/wendys.png">
+                                    <div class="slick-slide slick-cloned" data-slick-index="17" aria-hidden="true"
+                                        tabindex="-1" style="width: 222px;">
+                                        <div>
+                                            <div style="width: 100%; display: inline-block;">
+                                                <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/wendys.png">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
     </section>
--->
+
 
     <!--6°PARTE-->
 
@@ -547,7 +535,7 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 col-xl-1">
                     <img class="mx-auto d-block" src="https://rapiboy.com/Content/publica3/assets/svg/pedido.svg"
-                        width="55" height="65" alt="Rapiboy">
+                        width="40" height="55" alt="Rapiboy">
                 </div>
             </div>
         </div>
@@ -583,8 +571,14 @@
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
-        </script>
+    </script>
     <script src="https://kit.fontawesome.com/f17f895862.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+        });
+    </script>
 </body>
 
 </html>
