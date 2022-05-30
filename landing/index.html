@@ -16,12 +16,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title> Rapiboy | Servicio de delivery para restaurantes en Argentina.</title>
-    <meta name="description"
-        content="¿Está su restaurante preparado para ofrecer servicio de delivery en Argentina? Regístrese ahora de forma gratuita.">
+    <meta name="description" content="¿Está su restaurante preparado para ofrecer servicio de
+            delivery en Argentina? Regístrese ahora de forma gratuita.">
     <meta property="og:image" content="https://rapiboy.com/img/meta/rapiboy-web-metaimage-rapiboy.jpg">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="./style.css" rel="stylesheet" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -33,65 +33,96 @@
                 <h1>ENVÍOS ECONÓMICOS </h1>
                 <h1>PARA TU EMPRESA</h1>
                 <h2>¡A nadie le gusta esperar!</h2>
-                <h5>Envía tus productos en menos de 24hs.</h5>
+                <h3>Envía tus productos en menos de 24hs.</h3>
             </div>
             <div class="formHeader">
-                <table class="tableForm">
-                    <tr>
-                        <td>
-                            <select class="form-select" type="select" aria-placeholder="Pais" name="País">
-                                <option value="">"TRAER PAISES"</option>
-                            </select>
-                        </td>
 
-                        <td colspan="3">
-                            <select class="form-select" type="select" placeholder="Ciudad" name="Ciudad">
-                                <option value="">"TRAER CIUDAD"</option>
-                            </select>
-                        </td>
-                    </tr>
+                <form class="contact-form">
+                    
+                    <div class="row gx-4">
+                        <div class="col-md-4">
+                            <div class="form-floating mb-4">
+                                <select class="form-select" id="form-select-pais" name="pais">
+                                    <option value="TRAER PAISES"></option>
+                                </select>
+                                <label>Pais *</label>
+                            </div>
+                        </div>
 
-                    <tr>
-                        <td colspan="3">
-                            <input class="form-control" type="text" name="negocio" placeholder="Nombre de tu Negocio">
-                        </td>
-                        <td>
-                            <select class="form-select" type="select" placeholder="Empresa">
-                                <option value="">"TRAER EMPRESA"</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="4">
-                            <input class="form-control" name="name" placeholder="Tu nombre y apelldio" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input class="form-control" type="number" name="tel" placeholder="Teléfono" id="tel">
-                        </td>
-                        <td colspan="2">
-                            <input class="form-control" type="email" name="email" placeholder="Email" id="email">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="4">
-                            <textarea class="form-control" type="text" name="comentarios" placeholder="Comentarios"
-                                style="height: 100px"></textarea>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="4">
-                            <input class="form-control" type="text" placeholder="¿Como nos conociste?">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="4">
-                            <input class="form-control buttonHeader" type="button"
+                        <div class="col-md-8">
+                            <div class="form-floating mb-4">
+                                <select class="form-select" id="form-select-ciudad" name="pais">
+                                    <option value="TRAER Ciudades"></option>
+                                </select>
+                                <label>Ciudad *</label>
+                            </div>
+                        </div>
+                        <!-- /column -->
+                        <div class="col-md-8">
+                            <div class="form-floating mb-4">
+                                <input id="form_lastname" type="text" name="surname" class="form-control"
+                                    placeholder="Doe" required="">
+                                <label for="form_lastname">Nombre de tu Negocio *</label>
+                            </div>
+                        </div>
+                        <!-- /column -->
+                        <div class="col-md-4">
+                            <div class="form-floating mb-4">
+                                <select class="form-select" id="form-select-empresa" name="empresa" placeholder="empresa">
+                                    <option value="TRAER EMPRESAS"></option>
+                                </select>
+                                <label>Empresa *</label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-floating mb-4">
+                                <input id="id_fullname" type="text" name="fullName" class="form-control"
+                                    placeholder="Doe" >
+                                <label>Tu nombre y apellido *</label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-8">
+                            <div class="form-floating mb-4">
+                                <input id="id_email" type="text" name="email" class="form-control"
+                                    placeholder="Doe" >
+                                <label>Email *</label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-floating mb-4">
+                                <input id="id_telefono" type="number" name="telephone" class="form-control"
+                                    placeholder="Doe" >
+                                <label>Teléfono *</label>
+                            </div>
+                        </div>
+
+                        <!-- /column -->
+                        <div class="col-12">
+                            <div class="form-floating mb-4">
+                                <textarea id="form_message" name="message" class="form-control"
+                                    placeholder="Your message" style="height: 150px" required=""></textarea>
+                                <label for="form_message">Consulta *</label>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="form-floating mb-4">
+                                <input id="id_conociste" name="conosiste" class="form-control" >
+                                <label for="form_message">¿Cómo nos conociste? *</label>
+                            </div>
+                        </div>
+                        <!-- /column -->
+                        <div class="col-12 text-center">
+                            <input type="submit" class="btn btn-primary rounded-pill btn-send col-12"
                                 value="Realiza tus envíos con Rapiboy">
-                        </td>
-                    </tr>
-                </table>
+                        </div>
+                        <!-- /column -->
+                    </div>
+                    <!-- /.row -->
+                </form>
             </div>
         </div>
     </section>
@@ -101,24 +132,24 @@
         <div class="container py-14 -py-md-16">
             <div class="row gy-6">
                 <div class="row gy-6">
-                    <div class="col-md-6 col-lg-3" data-aos="zoom-in-right" data-aos-delay="300">
+                    <div class="col-md-6 col-lg-3 cuadritos" data-aos="zoom-in-right" data-aos-delay="300">
                         <div class="cuadritoss">
                             <img src="./assets/Iconos/Recurso 5@2x.png" alt="cuadritox">
-                            <h3>Entregas en el día</h3>
+                            <h4>Entregas en el día</h4>
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-3" data-aos="zoom-in-up" data-aos-delay="300">
+                    <div class="col-md-6 col-lg-3 cuadritos" data-aos="zoom-in-up" data-aos-delay="300">
                         <div class="cuadritoss">
                             <img src="./assets/Iconos/Recurso 7@2x.png" alt="recurso">
-                            <h3>Seguimiento en tiempo real</h3>
+                            <h4>Seguimiento en tiempo real</h4>
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-3" data-aos="zoom-in-left" data-aos-delay="300">
+                    <div class="col-md-6 col-lg-3 cuadritos" data-aos="zoom-in-left" data-aos-delay="300">
                         <div class="cuadritoss">
                             <img src="./assets/Iconos/Recurso 6@2x.png" alt="recurso">
-                            <h3>Integraciones</h3>
+                            <h4>Integraciones</h4>
                             <div class="integraciones">
                                 <img width="30px"
                                     src="https://www.visa.com.ar/dam/VCOM/regional/lac/SPA/Default/Pay%20With%20Visa/promocion-mercado-libre/mercadolibre-logo-400x225.jpg"
@@ -133,25 +164,25 @@
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-3" data-aos="zoom-out-right" data-aos-easing="ease-in-back"
+                    <div class="col-md-6 col-lg-3 cuadritos" data-aos="zoom-out-right" data-aos-easing="ease-in-back"
                         data-aos-delay="600" data-aos-offset="0">
                         <div class="cuadritoss">
                             <img src="./assets/Iconos/Recurso 4@2x.png" alt="recurso">
-                            <h3>Comunicación con tu cliente</h3>
+                            <h4>Comunicación con tu cliente</h4>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3" data-aos="zoom-out-down" data-aos-easing="ease-in-back"
+                    <div class="col-md-6 col-lg-3 cuadritos" data-aos="zoom-out-down" data-aos-easing="ease-in-back"
                         data-aos-delay="600" data-aos-offset="0">
                         <div class="cuadritoss">
                             <img src="./assets/Iconos/Recurso 3@2x.png" alt="recurso">
-                            <h3>Notificaciones de estado</h3>
+                            <h4>Notificaciones de estado</h4>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3" data-aos="zoom-out-left" data-aos-easing="ease-in-back"
+                    <div class="col-md-6 col-lg-3 cuadritos" data-aos="zoom-out-left" data-aos-easing="ease-in-back"
                         data-aos-delay="600" data-aos-offset="0">
                         <div class="cuadritoss">
                             <img src="./assets/Iconos/Recurso 8@2x.png" alt="recurso">
-                            <h3>Todos los medios de pago</h3>
+                            <h4>Todos los medios de pago</h4>
                         </div>
                     </div>
                 </div>
@@ -163,12 +194,13 @@
     <section class="vehiculos">
         <div class="vehiculosFooter">
             <div class="vehiculosHeader">
-                <h2 class="titlecards">Vehículos según tu necesidad</h2>
+                <h2 class="titlecards">Vehículos según tu <b>necesidad</b></h2>
             </div>
             <div class="container">
                 <div class="cards row">
                     <div class="col-md iconVehiculo">
-                        <img width="250px" align="center" src="./assets/Iconos/moto@2x.png" alt="">
+                        <img width="250px" align="center" class="imgovereffect" src="./assets/Iconos/moto@2x.png"
+                            alt="">
                         <h3>Moto</h3>
                     </div>
 
@@ -202,18 +234,18 @@
             <!--<div class="infoServicios">-->
             <div class="detalleServicios">
                 <div class="serviciosItem">
-                    <h3>Programación de envíos</h3>
-                    <h6>Buscamos, retiramos y entregamos</h6>
+                    <h3 class="ms-2">Programación de envíos</h3>
+                    <h6 class="ms-2">Buscamos, retiramos y entregamos</h6>
                 </div>
 
                 <div class="serviciosItem">
-                    <h3>Repartidores dedicados</h3>
-                    <h6>Repartidor para tu negocio</h6>
+                    <h3 class="ms-4">Repartidores dedicados</h3>
+                    <h6 class="ms-4">Repartidor para tu negocio</h6>
                 </div>
 
                 <div class="serviciosItem">
-                    <h3>Envíos flex / En el día</h3>
-                    <h6>Envíos en menos de 24hs</h6>
+                    <h3 class="ms-5">Envíos flex / En el día</h3>
+                    <h6 class="ms-5">Envíos en menos de 24hs</h6>
                     <!-- </div>-->
                 </div>
             </div>
@@ -226,25 +258,33 @@
     <section class="container-fluid gris25-bg">
         <div class="container pt-3 pb-3">
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                    <h2 class="text-center morado-co" data-tdp="hr23">Preguntas Frecuentes</h2>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12
+                        col-xl-12">
+                    <h2 class="text-center morado-co" data-tdp="hr23">Preguntas
+                        Frecuentes</h2>
                     <hr class="mx-auto d-block morado-bor mt-2">
                 </div>
             </div>
             <div class="row mt-3">
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 bg-ayuda">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4
+                        bg-ayuda">
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 pr-2">
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8
+                        pr-2">
                     <div class="accordion" id="Restaurante">
                         <div class="card mt-2">
                             <div class="card-header">
                                 <button class="btn btn-link" type="button" data-toggle="collapse"
                                     data-target="#collpase2" aria-expanded="true" aria-controls="collpase2"
-                                    data-tdp="hr26">¿Cómo se cotiza el servicio?</button>
+                                    data-tdp="hr26">¿Cómo se cotiza el
+                                    servicio?</button>
                             </div>
                             <div id="collpase2" class="collapse" data-parent="#Restaurante">
-                                <p class="mt-1" data-tdp="hr27">Las tarifas son únicas por zona y volumen para envíos
-                                    programados, para repartidores dedicados las tarifas son por hora.
+                                <p class="mt-1" data-tdp="hr27">Las tarifas
+                                    son únicas por zona y volumen para
+                                    envíos
+                                    programados, para repartidores dedicados
+                                    las tarifas son por hora.
                                 </p>
                             </div>
                         </div>
@@ -252,11 +292,15 @@
                             <div class="card-header">
                                 <button class="btn btn-link" type="button" data-toggle="collapse"
                                     data-target="#collpase3" aria-expanded="true" aria-controls="collpase3"
-                                    data-tdp="hr28">¿Es sólo un servicio para empresas?</button>
+                                    data-tdp="hr28">¿Es sólo un servicio
+                                    para empresas?</button>
                             </div>
                             <div id="collpase3" class="collapse" data-parent="#Restaurante">
-                                <p class="mt-1" data-tdp="hr29">Es un servicio para empresas, ecommerce y distintos
-                                    tipos de negocios con envíos frecuentes de productos.</p>
+                                <p class="mt-1" data-tdp="hr29">Es un
+                                    servicio para empresas, ecommerce y
+                                    distintos
+                                    tipos de negocios con envíos frecuentes
+                                    de productos.</p>
                             </div>
                         </div>
                         <div class="card mt-2">
@@ -266,19 +310,25 @@
                                     data-tdp="hr30">¿Cómo se cobra?</button>
                             </div>
                             <div id="collpase4" class="collapse" data-parent="#Restaurante">
-                                <p class="mt-1" data-tdp="hr31">Solo pagas por repartidor dedicado o por cada envío
-                                    realizado exitosamente,según el servicio que elijas.</p>
+                                <p class="mt-1" data-tdp="hr31">Solo pagas
+                                    por repartidor dedicado o por cada envío
+                                    realizado exitosamente,según el servicio
+                                    que elijas.</p>
                             </div>
                         </div>
                         <div class="card mt-2">
                             <div class="card-header">
                                 <button class="btn btn-link" type="button" data-toggle="collapse"
                                     data-target="#collpase5" aria-expanded="true" aria-controls="collpase5"
-                                    data-tdp="hr32">¿Qué es el seguimiento online?</button>
+                                    data-tdp="hr32">¿Qué es el seguimiento
+                                    online?</button>
                             </div>
                             <div id="collpase5" class="collapse" data-parent="#Restaurante">
-                                <p class="mt-1" data-tdp="hr33">Es la Trazabilidad online de envíos y notificaciones a
-                                    tus clientes sobre los cambios de estados de su compra.</p>
+                                <p class="mt-1" data-tdp="hr33">Es la
+                                    Trazabilidad online de envíos y
+                                    notificaciones a
+                                    tus clientes sobre los cambios de
+                                    estados de su compra.</p>
                             </div>
                         </div>
                         <div class="card mt-2">
@@ -288,8 +338,11 @@
                                     data-tdp="hr34">Servicios</button>
                             </div>
                             <div id="collpase6" class="collapse" data-parent="#Restaurante">
-                                <p class="mt-1" data-tdp="hr35">Programa retiros diarios o para algunos días de la
-                                    semana, nosotros retiramos y enviamos el mismo día.</p>
+                                <p class="mt-1" data-tdp="hr35">Programa
+                                    retiros diarios o para algunos días de
+                                    la
+                                    semana, nosotros retiramos y enviamos el
+                                    mismo día.</p>
                             </div>
                         </div>
                     </div>
@@ -303,20 +356,23 @@
     <section class="container-fluid pb-3">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-3">
-                    <h2 class="text-center" data-tdp="hc1">Clientes que confían en nuestra tecnología</h2>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12
+                        col-xl-12 mt-3">
+                    <h2 class="text-center" data-tdp="hc1">Clientes que
+                        confían en nuestra tecnología</h2>
                     <hr class="mx-auto d-block celeste-bor mt-2">
                 </div>
             </div>
             <div class="mt-2">
                 <div class="marcas slick-initialized slick-slider">
                     <div class="slick-list draggable">
-                        <div class="slick-track"
-                            style="opacity: 1; width: 5106px; transform: translate3d(-1776px, 0px, 0px);">
+                        <div class="slick-track" style="opacity: 1; width: 5106px; transform:
+                                translate3d(-1776px, 0px, 0px);">
                             <div class="slick-slide slick-cloned" data-slick-index="-5" aria-hidden="true" tabindex="-1"
                                 style="width: 222px;">
                                 <div>
-                                    <div style="width: 100%; display: inline-block;">
+                                    <div style="width: 100%; display:
+                                            inline-block;">
                                         <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/zele.png">
                                     </div>
                                 </div>
@@ -324,7 +380,8 @@
                             <div class="slick-slide slick-cloned" data-slick-index="-4" aria-hidden="true" tabindex="-1"
                                 style="width: 222px;">
                                 <div>
-                                    <div style="width: 100%; display: inline-block;">
+                                    <div style="width: 100%; display:
+                                            inline-block;">
                                         <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/grido.png">
                                     </div>
                                 </div>
@@ -332,7 +389,8 @@
                             <div class="slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" tabindex="-1"
                                 style="width: 222px;">
                                 <div>
-                                    <div style="width: 100%; display: inline-block;">
+                                    <div style="width: 100%; display:
+                                            inline-block;">
                                         <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/kfc.png">
                                     </div>
                                 </div>
@@ -340,7 +398,8 @@
                             <div class="slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true" tabindex="-1"
                                 style="width: 222px;">
                                 <div>
-                                    <div style="width: 100%; display: inline-block;">
+                                    <div style="width: 100%; display:
+                                            inline-block;">
                                         <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/subway.png">
                                     </div>
                                 </div>
@@ -348,7 +407,8 @@
                             <div class="slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" tabindex="-1"
                                 style="width: 222px;">
                                 <div>
-                                    <div style="width: 100%; display: inline-block;">
+                                    <div style="width: 100%; display:
+                                            inline-block;">
                                         <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/wendys.png">
                                     </div>
                                 </div>
@@ -356,151 +416,170 @@
                             <div class="slick-slide" data-slick-index="0" aria-hidden="true" tabindex="-1"
                                 style="width: 222px;">
                                 <div>
-                                    <div style="width: 100%; display: inline-block;">
-                                        <img src=https://rapiboy.com/img/LogosMarcas/Restaurante/kfc.png"> </div> </div>
-                                            </div> <div class="slick-slide" data-slick-index="1" aria-hidden="true"
-                                            tabindex="-1" style="width: 222px;">
-                                        <div>
-                                            <div style="width: 100%; display: inline-block;">
-                                                <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/mostaza.png">
-                                            </div>
-                                        </div>
+                                    <div style="width: 100%; display:
+                                            inline-block;">
+                                        <img src=https://rapiboy.com/img/LogosMarcas/Restaurante/kfc.png">
                                     </div>
-                                    <div class="slick-slide" data-slick-index="2" aria-hidden="true" tabindex="-1"
-                                        style="width: 222px;">
-                                        <div>
-                                            <div style="width: 100%; display: inline-block;">
-                                                <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/wendys.png">
-                                            </div>
-                                        </div>
+                                </div>
+                            </div>
+                            <div class="slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1"
+                                style="width: 222px;">
+                                <div>
+                                    <div style="width: 100%; display:
+                                            inline-block;">
+                                        <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/mostaza.png">
                                     </div>
-                                    <div class="slick-slide slick-current slick-active" data-slick-index="3"
-                                        aria-hidden="false" style="width: 222px;">
-                                        <div>
-                                            <div style="width: 100%; display: inline-block;">
-                                                <img
-                                                    src="https://rapiboy.com/img/LogosMarcas/Restaurante/sushiworld.png">
-                                            </div>
-                                        </div>
+                                </div>
+                            </div>
+                            <div class="slick-slide" data-slick-index="2" aria-hidden="true" tabindex="-1"
+                                style="width: 222px;">
+                                <div>
+                                    <div style="width: 100%; display:
+                                            inline-block;">
+                                        <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/wendys.png">
                                     </div>
-                                    <div class="slick-slide slick-active" data-slick-index="4" aria-hidden="false"
-                                        style="width: 222px;">
-                                        <div>
-                                            <div style="width: 100%; display: inline-block;">
-                                                <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/zele.png">
-                                            </div>
-                                        </div>
+                                </div>
+                            </div>
+                            <div class="slick-slide slick-current
+                                    slick-active" data-slick-index="3" aria-hidden="false" style="width: 222px;">
+                                <div>
+                                    <div style="width: 100%; display:
+                                            inline-block;">
+                                        <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/sushiworld.png">
                                     </div>
-                                    <div class="slick-slide slick-active" data-slick-index="5" aria-hidden="false"
-                                        style="width: 222px;">
-                                        <div>
-                                            <div style="width: 100%; display: inline-block;">
-                                                <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/grido.png">
-                                            </div>
-                                        </div>
+                                </div>
+                            </div>
+                            <div class="slick-slide slick-active" data-slick-index="4" aria-hidden="false"
+                                style="width: 222px;">
+                                <div>
+                                    <div style="width: 100%; display:
+                                            inline-block;">
+                                        <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/zele.png">
                                     </div>
-                                    <div class="slick-slide slick-active" data-slick-index="6" aria-hidden="false"
-                                        style="width: 222px;">
-                                        <div>
-                                            <div style="width: 100%; display: inline-block;">
-                                                <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/kfc.png">
-                                            </div>
-                                        </div>
+                                </div>
+                            </div>
+                            <div class="slick-slide slick-active" data-slick-index="5" aria-hidden="false"
+                                style="width: 222px;">
+                                <div>
+                                    <div style="width: 100%; display:
+                                            inline-block;">
+                                        <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/grido.png">
                                     </div>
-                                    <div class="slick-slide slick-active" data-slick-index="7" aria-hidden="false"
-                                        style="width: 222px;">
-                                        <div>
-                                            <div style="width: 100%; display: inline-block;">
-                                                <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/subway.png">
-                                            </div>
-                                        </div>
+                                </div>
+                            </div>
+                            <div class="slick-slide slick-active" data-slick-index="6" aria-hidden="false"
+                                style="width: 222px;">
+                                <div>
+                                    <div style="width: 100%; display:
+                                            inline-block;">
+                                        <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/kfc.png">
                                     </div>
-                                    <div class="slick-slide" data-slick-index="8" aria-hidden="true" tabindex="-1"
-                                        style="width: 222px;">
-                                        <div>
-                                            <div style="width: 100%; display: inline-block;">
-                                                <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/wendys.png">
-                                            </div>
-                                        </div>
+                                </div>
+                            </div>
+                            <div class="slick-slide slick-active" data-slick-index="7" aria-hidden="false"
+                                style="width: 222px;">
+                                <div>
+                                    <div style="width: 100%; display:
+                                            inline-block;">
+                                        <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/subway.png">
                                     </div>
-                                    <div class="slick-slide slick-cloned" data-slick-index="9" aria-hidden="true"
-                                        tabindex="-1" style="width: 222px;">
-                                        <div>
-                                            <div style="width: 100%; display: inline-block;">
-                                                <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/kfc.png">
-                                            </div>
-                                        </div>
+                                </div>
+                            </div>
+                            <div class="slick-slide" data-slick-index="8" aria-hidden="true" tabindex="-1"
+                                style="width: 222px;">
+                                <div>
+                                    <div style="width: 100%; display:
+                                            inline-block;">
+                                        <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/wendys.png">
                                     </div>
-                                    <div class="slick-slide slick-cloned" data-slick-index="10" aria-hidden="true"
-                                        tabindex="-1" style="width: 222px;">
-                                        <div>
-                                            <div style="width: 100%; display: inline-block;">
-                                                <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/mostaza.png">
-                                            </div>
-                                        </div>
+                                </div>
+                            </div>
+                            <div class="slick-slide slick-cloned" data-slick-index="9" aria-hidden="true" tabindex="-1"
+                                style="width: 222px;">
+                                <div>
+                                    <div style="width: 100%; display:
+                                            inline-block;">
+                                        <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/kfc.png">
                                     </div>
-                                    <div class="slick-slide slick-cloned" data-slick-index="11" aria-hidden="true"
-                                        tabindex="-1" style="width: 222px;">
-                                        <div>
-                                            <div style="width: 100%; display: inline-block;">
-                                                <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/wendys.png">
-                                            </div>
-                                        </div>
+                                </div>
+                            </div>
+                            <div class="slick-slide slick-cloned" data-slick-index="10" aria-hidden="true" tabindex="-1"
+                                style="width: 222px;">
+                                <div>
+                                    <div style="width: 100%; display:
+                                            inline-block;">
+                                        <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/mostaza.png">
                                     </div>
-                                    <div class="slick-slide slick-cloned" data-slick-index="12" aria-hidden="true"
-                                        tabindex="-1" style="width: 222px;">
-                                        <div>
-                                            <div style="width: 100%; display: inline-block;">
-                                                <img
-                                                    src="https://rapiboy.com/img/LogosMarcas/Restaurante/sushiworld.png">
-                                            </div>
-                                        </div>
+                                </div>
+                            </div>
+                            <div class="slick-slide slick-cloned" data-slick-index="11" aria-hidden="true" tabindex="-1"
+                                style="width: 222px;">
+                                <div>
+                                    <div style="width: 100%; display:
+                                            inline-block;">
+                                        <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/wendys.png">
                                     </div>
-                                    <div class="slick-slide slick-cloned" data-slick-index="13" aria-hidden="true"
-                                        tabindex="-1" style="width: 222px;">
-                                        <div>
-                                            <div style="width: 100%; display: inline-block;">
-                                                <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/zele.png">
-                                            </div>
-                                        </div>
+                                </div>
+                            </div>
+                            <div class="slick-slide slick-cloned" data-slick-index="12" aria-hidden="true" tabindex="-1"
+                                style="width: 222px;">
+                                <div>
+                                    <div style="width: 100%; display:
+                                            inline-block;">
+                                        <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/sushiworld.png">
                                     </div>
-                                    <div class="slick-slide slick-cloned" data-slick-index="14" aria-hidden="true"
-                                        tabindex="-1" style="width: 222px;">
-                                        <div>
-                                            <div style="width: 100%; display: inline-block;">
-                                                <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/grido.png">
-                                            </div>
-                                        </div>
+                                </div>
+                            </div>
+                            <div class="slick-slide slick-cloned" data-slick-index="13" aria-hidden="true" tabindex="-1"
+                                style="width: 222px;">
+                                <div>
+                                    <div style="width: 100%; display:
+                                            inline-block;">
+                                        <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/zele.png">
                                     </div>
-                                    <div class="slick-slide slick-cloned" data-slick-index="15" aria-hidden="true"
-                                        tabindex="-1" style="width: 222px;">
-                                        <div>
-                                            <div style="width: 100%; display: inline-block;">
-                                                <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/kfc.png">
-                                            </div>
-                                        </div>
+                                </div>
+                            </div>
+                            <div class="slick-slide slick-cloned" data-slick-index="14" aria-hidden="true" tabindex="-1"
+                                style="width: 222px;">
+                                <div>
+                                    <div style="width: 100%; display:
+                                            inline-block;">
+                                        <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/grido.png">
                                     </div>
-                                    <div class="slick-slide slick-cloned" data-slick-index="16" aria-hidden="true"
-                                        tabindex="-1" style="width: 222px;">
-                                        <div>
-                                            <div style="width: 100%; display: inline-block;">
-                                                <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/subway.png">
-                                            </div>
-                                        </div>
+                                </div>
+                            </div>
+                            <div class="slick-slide slick-cloned" data-slick-index="15" aria-hidden="true" tabindex="-1"
+                                style="width: 222px;">
+                                <div>
+                                    <div style="width: 100%; display:
+                                            inline-block;">
+                                        <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/kfc.png">
                                     </div>
-                                    <div class="slick-slide slick-cloned" data-slick-index="17" aria-hidden="true"
-                                        tabindex="-1" style="width: 222px;">
-                                        <div>
-                                            <div style="width: 100%; display: inline-block;">
-                                                <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/wendys.png">
-                                            </div>
-                                        </div>
+                                </div>
+                            </div>
+                            <div class="slick-slide slick-cloned" data-slick-index="16" aria-hidden="true" tabindex="-1"
+                                style="width: 222px;">
+                                <div>
+                                    <div style="width: 100%; display:
+                                            inline-block;">
+                                        <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/subway.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slick-slide slick-cloned" data-slick-index="17" aria-hidden="true" tabindex="-1"
+                                style="width: 222px;">
+                                <div>
+                                    <div style="width: 100%; display:
+                                            inline-block;">
+                                        <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/wendys.png">
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
     </section>
 
 
@@ -511,15 +590,18 @@
             <hidden data-tdp-file="home_probaahorarestaurante.json" data-tdp-ignore=""></hidden>
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-7 col-lg-6 col-xl-6">
-                    <h2 class="text-left morado-co" style="font-size: 1.9rem;">
+                    <h2 class="text-left morado-co" style="font-size:1.9rem;">
                         <b data-tdp="hp1">Empezá ahora.</b>
                     </h2>
-                    <h3 class="mt-2 morado-co" data-tdp="hp2">Sé parte de la comunidad Rapiboy</h3>
+                    <h3 class="mt-2 morado-co" data-tdp="hp2">Sé parte de la
+                        comunidad Rapiboy</h3>
                     <hr class="morado-bor mt-3">
-                    <p class="text-left mt-2 mb-2 morado-co" data-tdp="hp3">Escala tu restaurante con esta tecnología
+                    <p class="text-left mt-2 mb-2 morado-co" data-tdp="hp3">Escala
+                        tu restaurante con esta tecnología
                     </p>
                     <a class="btn btn-violeta btn-lg wow fadeInLeft" href="/NuevoRestaurante" target="_blank"
-                        role="button" style="visibility: visible; animation-name: fadeInLeft;">
+                        role="button" style="visibility: visible;
+                            animation-name: fadeInLeft;">
                         <span data-tdp="hp4">Probá Rapiboy</span>
                         <i class="fas fa-chevron-right"></i>
                     </a>
@@ -543,16 +625,19 @@
     <footer class="container-fluid celeste-bg footer2">
         <div class="container pt-2 pb-2">
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-8 col-xl-8 text-left sm-text-center">
-                    <p class="blanco-co">
-                        <i class="far fa-copyright"></i> <strong>2022 Rapiboy.</strong>
-                        <span data-br="Direitos reservados">
+                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-8 col-xl-8
+                        text-left sm-text-center">
+                    <p>
+                        <i class="far fa-copyright underline"></i> <strong class="underline">2022
+                            Rapiboy.</strong>
+                        <span class="underline" data-br="Direitos reservados">
                             Derechos reservados.
                         </span>
                         <span class="underline">contacto@rapiboy.com</span>
                     </p>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4 col-xl-4 text-right sm-text-center sm-mt-2">
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4 col-xl-4
+                        text-right sm-text-center sm-mt-2">
                     <a class="social-link" href="https://www.facebook.com/rapiboyargentina" target="_blank"
                         role="button"><i class="fab fa-facebook-f"></i></a>
                     <a class="social-link" href="https://www.instagram.com/rapiboyoficial/" target="_blank"
@@ -571,13 +656,24 @@
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://kit.fontawesome.com/f17f895862.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
         AOS.init({
             duration: 1000,
         });
+    </script>
+
+    <script>
+
+// $( ".iconVehiculo" ).hover(function() {
+//     console.log("imgovereffect");
+//     $(this).addClass("animate__animated animate__bounce animate__repeat-2");
+// });
+
+
     </script>
 </body>
 
