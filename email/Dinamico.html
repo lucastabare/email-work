@@ -23,6 +23,11 @@
       text-decoration: none;
       outline: none;
     }
+    @media (max-width: 360px) {
+      .tableMobile{
+        width: 344px;
+      }
+    }
 
     @media (max-width: 649px) {
       .o_col-full {
@@ -346,7 +351,7 @@
                       style="font-family: 'Open Sans', Arial, sans-serif;font-size:16px;color:#FFFFFF;padding-left: 20px;padding-right: 20px;">
                       <a href="{{Model.link2}}" style="text-decoration:none; color: #fff;" data-color="Button Link"
                         target="_blank">
-                       <b><singleline label="button">{{Model.textoboton2}}</singleline></b> 
+                      <b><singleline label="button">{{Model.textoboton2}}</singleline></b> 
                       </a>
                     </td>
                   </tr>
