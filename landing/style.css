@@ -135,6 +135,27 @@ p {
     text-align: right;
 }
 
+.contact-form{
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 60%;
+    background-color: #fafafa;
+    padding: 15px;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.btn-lg{
+    font-size: 25px;
+    background-color: #292966;
+    color: #FBFDFF;
+    border-radius: 5px;
+    padding: 8px 10px 8px 10px;
+    margin-top: 5px;
+}
+
 /* .formHeader{
     background-color: #FAFAFA;
     margin: 0px auto;
@@ -190,20 +211,15 @@ p {
     background-color: rgba(214, 231, 234, .5);
 }
 
+.gy-6{
+    justify-content: center;
+}
 
 /* .recursoCuadrito{
     margin-bottom: 0;
     align-items: center;
     text-align: center;
 } */
-.gy-6{
-    justify-content: center;
-}
-
-.contact-form{
-    width: 500px;
-}
-
 
 .cuadritos{
     margin: 0px auto;
