@@ -112,7 +112,6 @@ p {
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position:center;
     overflow: hidden;
     margin: 0px auto;
     /* position: relative; */
@@ -156,40 +155,6 @@ p {
     margin-top: 5px;
 }
 
-/* .formHeader{
-    background-color: #FAFAFA;
-    margin: 0px auto;
-    margin-top: 150px;
-    width: 640px;
-    height: 420px;
-    border-radius: 10px;
-    padding-top: 15px;
-}
-
-.tableForm{
-    margin: 0px auto;
-    width: 600px;
-    height: 400px;
-}
-/* .formHeader{
-    background-color: #FBFDFF;
-    border-radius: 10px;
-    display: block;
-    position: relative;
-}     */
-
-/* .tableForm{
-    position: absolute;
-    background-color: #FBFDFF;
-    border-radius: 10px;
-    margin: 500px 0 0 1300px;
-} */
-
-/* .tableForm td{
-    border-radius: 10px;
-    padding: 8px;
-} */
-
 .buttonHeader{
     font-size: 25px;
     background-color: #292966;
@@ -198,7 +163,7 @@ p {
     padding: 8px 10px 8px 10px;
     margin-top: 5px;
 }
- */
+
 
 
 /*Estilos Recursos: 2°PARTE */
@@ -208,42 +173,44 @@ p {
     height: 100vh;
     display: flex;
     align-items: center;
-    background-color: rgba(214, 231, 234, .5);
+    align-content: center;
+    text-align: center;
+    background-color: rgba(214, 231, 234, .5); 
 }
 
-.gy-6{
+.gy-2{
     justify-content: center;
 }
 
-/* .recursoCuadrito{
-    margin-bottom: 0;
-    align-items: center;
-    text-align: center;
-} */
-
 .cuadritos{
     margin: 0px auto;
-    width: 300px;
-    height: 300px;
+    width: 292px !important;
+    height: 253px !important;
     text-align: center;
     align-items: center;
     justify-content: center;
     background-image: url("./assets/Iconos/cuadritox.png");
     background-repeat: no-repeat;
     background-size: 100%;
-    border-radius: 2px solid black;
     margin: 30px;
     padding: 40px;
 }
 
-.container{
+/* .container{
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
     padding: 10px;
-}
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+} */
 
-.cuadritoss{
+/* .cuadritoss{
     margin: 5px;
     padding: 15px;
-}
+} */
 
 .cuadritoss img{
     margin: 0px auto;
@@ -257,10 +224,11 @@ p {
 
 
 /*Estilos cards: 3°PARTE */
+
 .vehiculos{
     height: 100%;
     background-image: url("./assets/recursos/división\ vehi-servi\ \(nose\).png") !important;
-    background-position: bottom !important;
+    background-position: bottom  !important;
     background-repeat: no-repeat !important;
     background-size:100% 100%;
 }
@@ -281,7 +249,7 @@ p {
     padding: 130px 0px 0px 20px;
     transform: rotate(-2deg);
     margin-left: 130px;
-    font-size: 3.5rem;
+    font-size: 3.5vw;
 }
 
 .cards{
@@ -290,14 +258,14 @@ p {
     width: 100%;
     text-align: center;
     align-items: center;
-    padding: 15px;
+    padding: 10px;
 }
 
-.iconVehiculo{
+/* .iconVehiculo{
     margin: 0px auto;
     background-image: url("./assets/Iconos/cuadritox.png");
     background-repeat: no-repeat;
-    background-size: inherit;
+    
     background-position: center;
     text-align: center;
     align-items: center;
@@ -305,21 +273,20 @@ p {
     width: 250px !important;
     height: 250px !important;
     padding: 30px;
-    /* width: 400px;
-    height: 400px;
-    padding: 25px;
-    border-radius: 15px 0px 10px 15px 5px rgba(0,0,0,0.72); */
-    
-    
-    /* text-align: center;
-    justify-content: center;
-    align-items: center; */
-}
+} */
 
-.iconVehiculo img:hover{
+.cards .cuadritos img:hover{
     animation-duration: 3s;
     animation-name: slidein;
     animation-iteration-count: infinite;
+}
+
+.vehiculosFooter{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-image: url("./assets/recursos/vehículos.png");
+    background-position: bottom right;
+    background-size: 40% 80%;
 }
 
 @keyframes slidein {
@@ -332,15 +299,7 @@ p {
     margin-left: 50%;
     width: 250px;
 }
-}
-
-.vehiculosFooter{
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-image: url("./assets/recursos/vehículos.png");
-    background-position: bottom right;
-    background-size: 40% 80%;
-}
+} 
 
 
 
@@ -349,9 +308,6 @@ p {
 .servicios{
     width: 100%;
     height: 100vh;
-    /* background-image: url("./assets/recursos/servicios.jpg");
-    background-repeat: no-repeat;
-    background-size: center left; */
 }
 
 .serviciosHeader{
@@ -384,12 +340,6 @@ p {
     margin-top: 0px;
 }
 
-/* .infoServicios{
-    position: right;
-    width: 50%;
-    flex-direction: right;
-} */
-
 .imgServicios{
     flex-direction: left;
 }
@@ -407,7 +357,6 @@ p {
     padding: 50px;
     height: 200px;
     width: 100%;
-    
 }
 
 .serviciosItem h3{
@@ -463,9 +412,6 @@ p {
 .accordion .card-header {
     padding: 0;
     background-color: transparent;
-    
-    /* border-bottom: none;
-    border: none; */
 }
 
 .btn:not(:disabled):not(.disabled){
@@ -528,7 +474,7 @@ p {
     box-sizing: border-box;
 
     -webkit-user-select: none;
-       -moz-user-select: none;
+    -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
 
@@ -563,9 +509,9 @@ p {
 .slick-slider .slick-list
 {
     -webkit-transform: translate3d(0, 0, 0);
-       -moz-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
         -ms-transform: translate3d(0, 0, 0);
-         -o-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
 }
 
@@ -599,7 +545,6 @@ p {
 {
     display: none;
     float: left;
-
     height: 100%;
     min-height: 1px;
 }
@@ -693,62 +638,3 @@ p {
 .underline{
     color: #FAFAFA;
 }
-/* .footerEnd{
-    height: 120px;
-    background-color: #33A2CC;
-    display: flex;
-}
-
-.footerEnd img{
-    height: 30px;
-} */ 
-
-
-/*.divHeader{
-    width: 100%;
-    height: 650px;
-    background-image: url("./assets/recursos/header.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    text-align: center;
-    background-attachment: fixed;
-    position: relative;
-    overflow: hidden;
-}
-
-.titleHeader{
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: left;
-
-}
-
-.headerText{
-
-}
-
-.imgHeader{
-}
-
-.formHeader{
-    background-color: #fff;
-    border-radius: 10px;
-    margin: 300px 0px 0px ;
-    
-}
-
-.tableForm{
-    margin: 10px;
-}
-
-.buttonHeader{
-    background-color: #292966;
-    color: #FBFDFF;
-    border-radius: 5px;
-    padding: 5px 10px 5px 10px;
-    margin-top: 5px;
-}*/
