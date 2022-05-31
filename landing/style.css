@@ -106,6 +106,63 @@ p {
 
 /*Estilos Header: 1°PARTE */
 
+@media screen and (max-width:400px) {
+    .home{
+        margin: 0 auto !important;
+        width: 100% !important;
+        height: 100vh !important;
+        background-image: url("./assets/recursos/header-mobile.jpg") !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        overflow: hidden !important;
+    }
+
+    .header{
+        display: flex;
+    }
+
+    .titleHeader{
+        display: none !important;
+    }
+
+    .formHeader{
+        margin: 0 auto !important;
+        justify-content: center !important;
+        align-items: center !important;
+        align-content: center !important;
+        text-align: center !important;
+        width: 40%;
+    }
+
+    .contact-form{
+        /* display: none !important; */
+        justify-content: center !important;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        width: 40%;
+    }
+
+
+
+
+
+
+
+    /*Estilos 2ª parte*/
+
+    .recurso{
+        display: none !important;
+    }
+
+
+}
+
+
+
+
+
+
 .home{
     background-image: url("./assets/recursos/header.jpg");
     width: 100%;
