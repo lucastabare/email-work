@@ -104,9 +104,11 @@ p {
     margin: 0;
 } 
 
-/*Estilos Header: 1°PARTE */
+
+/*ESTILOS MOBILE VERSION:  */
 
 @media screen and (max-width: 500px) {
+    /* 1ª PARTE: */
     .home{
         margin: 0 auto !important;
         height: 100vh !important;
@@ -135,47 +137,145 @@ p {
     }
 
     .formHeader{
-        margin: 0 auto !important;
-        width: 60% !important;
-        height: 70% !important;
-        padding: 0;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        align-content: center;
-
+        width: 60%;
+        margin-top: 160px;
+        align-items: center !important;
+        align-content: center !important;
+        justify-content: center !important;
     }
+
     .contact-form{
-        margin: 0 auto;
+        margin: 0 auto !important;
         margin-right: 0px !important;
         margin-left: 0px !important;
-        margin-top: 0px !important;
-        height: 70% !important;
-        justify-content: center !important;
-        align-items: center !important;
-        text-align: center !important;
-        align-content: center !important;
+        margin-top: 0px !important; 
+        margin-bottom: 0px !important; 
     }
 
+    .btn-lg{
+        font-size: 1rem !important;
+    }
 
-
-
-
-
-
-    /*Estilos 2ª parte*/
+    /* 2ª PARTE*/
 
     .recurso{
+        height: 100% !important; 
+    }
+
+    .cuadritos{
+        width: 30% !important;
+        height: 30% !important;
+        background-image: none !important;
+        margin: 0px !important;
+    }
+
+    .cuadritoss img{
+        width: 50px !important;
+        margin: 0 auto !important;
+        padding: 0 auto !important;
+    }
+
+    .cuadritos h4{
+        font-size: 0.5rem;
+    }
+
+    .integraciones img{
+        width: 10px !important;
+    }
+    
+    /* 3ª PARTE: */
+
+    .vehiculos{
+        background-image: none !important;
+    }
+
+    .vehiculosFooter{
+        background-image: none !important;
+    }
+
+    .vehiculosHeader{
+        background-image: url("./assets//recursos/vehículos-mobile.png") !important; 
+        background-position: top left !important;
+        width: 100% !important;
+        height: 150px !important;
+        background-size: 100% !important;
+        display: block !important;
+        padding: 15px !important;
+        margin-top: 20px;
+    }
+
+    .titlecards{
+        margin-top: 25px !important;
+        margin-left: 0px !important;
+        padding: 0 !important;
+        color: #000;
+    }
+
+    .container{
+        background-image: none !important;
+        display: flex !important; 
+        flex-wrap: wrap !important;
+    }
+
+    .vehiculosFooter .container .gy-2{
+        width: 30%;
+        margin: 0px auto;
+    }
+
+    .cuadritos img{
+        width: 150px;
+    }
+
+    /* 4ª PARTE: */
+
+    .servicios{
+        width: 100%;
+        height: 100vh;
+    }
+
+    .serviciosHeader{
+        background-image: url("./assets//recursos/servicios-mobile.png") !important; 
+        background-position: top left !important;
+        width: 100% !important;
+        height: 35% !important;
+        background-size: 100% !important;
+        display: block !important;
+        padding: 15px !important;
+        margin-top: 20px;
+        background-image: none !important;
+    }
+
+    .titleServicios{
+        padding: 0px !important;
+        padding-top: 12rem !important;
+        color: #000 !important;
+        margin-left: 0px !important;
+    }
+
+    .imgServicios{
         display: none !important;
     }
 
+    .serviciosInfo{
 
+    }
+
+    .serviciosItem{
+        background-size: 90% 80% !important;
+    }
+
+    /* .ms-4{
+        margin-left: 0px !important;
+    }
+    
+    .ms-5{
+        margin-left: 0px !important;
+    } */
 }
 
 
 
-
-
+/* ESTILOS DESKTOP : */
 
 .home{
     background-image: url("./assets/recursos/header.jpg");
@@ -235,8 +335,6 @@ p {
     margin-top: 5px;
 }
 
-
-
 /*Estilos Recursos: 2°PARTE */
 
 .recurso{
@@ -255,8 +353,8 @@ p {
 
 .cuadritos{
     margin: 0px auto;
-    width: 292px !important;
-    height: 253px !important;
+    width: 292px ;
+    height: 253px ;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -290,7 +388,7 @@ p {
 }
 
 .integraciones img{
-    width: 30px !important;
+    width: 30px;
 }
 
 
@@ -298,7 +396,7 @@ p {
 
 .vehiculos{
     height: 100%;
-    background-image: url("./assets/recursos/división\ vehi-servi\ \(nose\).png") !important;
+    background-image: url("./assets/recursos/división\ vehi-servi\ \(nose\).png");
     background-position: bottom  !important;
     background-repeat: no-repeat !important;
     background-size:100% 100%;

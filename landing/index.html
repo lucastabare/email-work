@@ -36,103 +36,108 @@
                 <h2>¡A nadie le gusta esperar!</h2>
                 <h3>Envía tus productos en menos de 24hs.</h3>
             </div>
-            <div class="formHeader">
-                <form class="contact-form">
-                    <div class="row g-1">
-                        <div class="col-md-4 col-xs-6">
-                            <div class="form-floating ">
-                                <select class="form-select" id="form-select-pais" name="pais">
-                                    <option value="">TRAER PAISES</option>
-                                </select>
-                                <label>Pais *</label>
+            <div class="container">
+                <div class="formHeader">
+
+                    <!-- REVISAR ESTO-->
+
+                    <form class="contact-form">
+                        <div class="row g-1 align-items-center justify-content-center">
+                            <div class="col-lg-4 col-xs-2">
+                                <div class="form-floating ">
+                                    <select class="form-select" id="form-select-pais" name="pais">
+                                        <option value="">TRAER PAISES</option>
+                                    </select>
+                                    <label>Pais *</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-xs-2">
+                                <div class="form-floating">
+                                    <select class="form-select" id="form-select-ciudad" name="pais">
+                                        <option value="TRAER Ciudades"></option>
+                                    </select>
+                                    <label>Ciudad *</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="form-floating">
+                                    <input id="form_lastname" type="text" name="surname" class="form-control"
+                                        placeholder="Doe" required="">
+                                    <label for="form_lastname">Nombre de tu Negocio *</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="form-floating">
+                                    <select class="form-select" id="form-select-empresa" name="empresa" placeholder="Doe">
+                                        <option value="TRAER EMPRESAS"></option>
+                                    </select>
+                                    <label>Empresa *</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-floating">
+                                    <input id="id_fullname" type="text" name="fullName" class="form-control"
+                                        placeholder="Doe">
+                                    <label>Tu nombre y apellido *</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="form-floating">
+                                    <input id="id_email" type="text" name="email" class="form-control" placeholder="Doe">
+                                    <label>Email *</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="form-floating">
+                                    <input id="id_telefono" type="number" name="telephone" class="form-control"
+                                        placeholder="Doe">
+                                    <label>Teléfono *</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-floating">
+                                    <textarea id="form_message" name="message" class="form-control"
+                                        placeholder="Your message" style="height: 150px" required=""></textarea>
+                                    <label for="form_message">Consulta *</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-floating">
+                                    <input id="id_conociste" name="conosiste" class="form-control" placeholder="Doe">
+                                    <label>¿Cómo nos conociste? *</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 text-center">
+                                <input type="submit" class="btn btn-lg rounded-pill btn-send col-12"
+                                    value="Realiza tus envíos con Rapiboy">
                             </div>
                         </div>
-                        <div class="col-md-8 col-xs-6">
-                            <div class="form-floating">
-                                <select class="form-select" id="form-select-ciudad" name="pais">
-                                    <option value="TRAER Ciudades"></option>
-                                </select>
-                                <label>Ciudad *</label>
-                            </div>
-                        </div>
-                        <div class="col-md-8 col-xs-6">
-                            <div class="form-floating">
-                                <input id="form_lastname" type="text" name="surname" class="form-control"
-                                    placeholder="Doe" required="">
-                                <label for="form_lastname">Nombre de tu Negocio *</label>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-xs-6">
-                            <div class="form-floating">
-                                <select class="form-select" id="form-select-empresa" name="empresa" placeholder="Doe">
-                                    <option value="TRAER EMPRESAS"></option>
-                                </select>
-                                <label>Empresa *</label>
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-xs-6">
-                            <div class="form-floating">
-                                <input id="id_fullname" type="text" name="fullName" class="form-control"
-                                    placeholder="Doe">
-                                <label>Tu nombre y apellido *</label>
-                            </div>
-                        </div>
-                        <div class="col-md-8 col-xs-6">
-                            <div class="form-floating">
-                                <input id="id_email" type="text" name="email" class="form-control" placeholder="Doe">
-                                <label>Email *</label>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-xs-6">
-                            <div class="form-floating">
-                                <input id="id_telefono" type="number" name="telephone" class="form-control"
-                                    placeholder="Doe">
-                                <label>Teléfono *</label>
-                            </div>
-                        </div>
-                        <div class="col-12 col-xs-6">
-                            <div class="form-floating">
-                                <textarea id="form_message" name="message" class="form-control"
-                                    placeholder="Your message" style="height: 150px" required=""></textarea>
-                                <label for="form_message">Consulta *</label>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-floating">
-                                <input id="id_conociste" name="conosiste" class="form-control" placeholder="Doe">
-                                <label>¿Cómo nos conociste? *</label>
-                            </div>
-                        </div>
-                        <div class="col-12 text-center">
-                            <input type="submit" class="btn btn-lg rounded-pill btn-send col-12"
-                                value="Realiza tus envíos con Rapiboy">
-                        </div>
-                    </div>
-                </form>
-            </div>
+                    </form>
+                </div>
+        </div>
         </div>
     </section>
 
     <!--2° PARTE-->
 
-<!--     
+    
     <section height="100vh" class="recurso">
         <div class="container">
-            <div class="row gy-2">
+            <!-- <div class="row gy-2"> -->
                 <div class="row gy-2">
-                    <div class="col-md-6 col-lg-3 cuadritos" data-aos="zoom-in-right" data-aos-delay="300">
+                    <div class="col-sm-6 col-lg-3 cuadritos" data-aos="zoom-in-right" data-aos-delay="300">
                         <div class="cuadritoss">
                             <img src="./assets/Iconos/Recurso 5@2x.png" alt="cuadritox">
                             <h4>Entregas en el día</h4>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3 cuadritos" data-aos="zoom-in-up" data-aos-delay="300">
+                    <div class="col-sm-6 col-lg-3 cuadritos" data-aos="zoom-in-up" data-aos-delay="300">
                         <div class="cuadritoss">
                             <img src="./assets/Iconos/Recurso 7@2x.png" alt="recurso">
                             <h4>Seguimiento en tiempo real</h4>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3 cuadritos" data-aos="zoom-in-left" data-aos-delay="300">
+                    <div class="col-sm-6 col-lg-3 cuadritos" data-aos="zoom-in-left" data-aos-delay="300">
                         <div class="cuadritoss">
                             <img src="./assets/Iconos/Recurso 6@2x.png" alt="recurso">
                             <h4>Integraciones</h4>
@@ -149,21 +154,21 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3 cuadritos" data-aos="zoom-out-right" data-aos-easing="ease-in-back"
+                    <div class="col-sm-6 col-lg-3 cuadritos" data-aos="zoom-out-right" data-aos-easing="ease-in-back"
                         data-aos-delay="600" data-aos-offset="0">
                         <div class="cuadritoss">
                             <img src="./assets/Iconos/Recurso 4@2x.png" alt="recurso">
                             <h4>Comunicación con tu cliente</h4>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3 cuadritos" data-aos="zoom-out-down" data-aos-easing="ease-in-back"
+                    <div class="col-sm-6 col-lg-3 cuadritos" data-aos="zoom-out-down" data-aos-easing="ease-in-back"
                         data-aos-delay="600" data-aos-offset="0">
                         <div class="cuadritoss">
                             <img src="./assets/Iconos/Recurso 3@2x.png" alt="recurso">
                             <h4>Notificaciones de estado</h4>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3 cuadritos" data-aos="zoom-out-left" data-aos-easing="ease-in-back"
+                    <div class="col-sm-6 col-lg-3 cuadritos" data-aos="zoom-out-left" data-aos-easing="ease-in-back"
                         data-aos-delay="600" data-aos-offset="0">
                         <div class="cuadritoss">
                             <img src="./assets/Iconos/Recurso 8@2x.png" alt="recurso">
@@ -171,12 +176,11 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            <!-- </div> -->
         </div>
     </section>
 
         <!--3°PARTE-->
-<!--         
         <section class="vehiculos">
             <div class="vehiculosFooter">
                 <div class="vehiculosHeader">
@@ -185,16 +189,16 @@
                 <div class="container">
                     <div class="row gy-2">
                         <div class="cards row gy-2">
-                            <div class="col-md-6 col-lg-3 cuadritos ">
+                            <div class="col-sm-6 col-lg-3 cuadritos ">
                                 <img width="200px" class="imgovereffect" src="./assets/Iconos/moto@2x.png"
                                     alt="">
                                 <h3>Moto</h3>
                             </div>
-                            <div class="col-md-6 col-lg-3 cuadritos">
+                            <div class="col-sm-6 col-lg-3 cuadritos">
                                 <img width="200px" src="./assets/Iconos/utilitario chico@2x.png" alt="">
                                 <h3>Utilitario chico</h3>
                             </div>
-                            <div class="col-md-6 col-lg-3 cuadritos">
+                            <div class="col-sm-6 col-lg-3 cuadritos">
                                 <img width="200px" src="./assets/Iconos/utilitario grande@2x.png" alt="">
                                 <h3>Utilitario grande</h3>
                             </div>
@@ -204,8 +208,8 @@
             </div>
         </section>
 
+<!-- 4°PARTE-->
 
-        <!--4°PARTE-
         <section class="servicios">
             <div class="serviciosHeader">
                 <h2 class="titleServicios">Servicios que tenemos para ofrecerte</h2>
@@ -231,11 +235,10 @@
                         <h6 class="ms-5">Envíos en menos de 24hs</h6>
                     </div>
                 </div>
-
             </div>
         </section>
 
-        <!--5°Parte
+        <!--5°Parte -->
 
         <section class="container-fluid gris25-bg">
             <div class="container pt-3 pb-3">
@@ -551,7 +554,7 @@
         </section>
 
 
-        <!--6°PARTE-
+        <!--6°PARTE-->
 
         <section class="container-fluid footerEmp">
             <div class="container svg pt-3 pb-3">
@@ -578,7 +581,7 @@
             </div>
         </section>
 
-        <!--7° PARTE 
+        <!--7° PARTE-->
 
         <footer class="container-fluid celeste-bg footer1">
             <div class="container pt-3 pb-3">
@@ -618,10 +621,8 @@
                 </div>
             </div>
         </footer> 
---> -->
-
-
-
+        
+<!--CODIGOS JAVASCRIPT-->
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
