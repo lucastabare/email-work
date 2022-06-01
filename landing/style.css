@@ -106,41 +106,55 @@ p {
 
 /*Estilos Header: 1°PARTE */
 
-@media screen and (max-width:400px) {
+@media screen and (max-width: 500px) {
     .home{
         margin: 0 auto !important;
-        width: 100% !important;
         height: 100vh !important;
         background-image: url("./assets/recursos/header-mobile.jpg") !important;
         background-repeat: no-repeat !important;
-        background-size: cover !important;
-        overflow: hidden !important;
-    }
+        background-size: contain !important;
+        background-position: top center;
+        overflow: hidden;
+        background-color: #D5E7E9;
+    }   
 
     .header{
-        display: flex;
+        margin: 0 auto !important;
+        height: 70vh !important;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        align-content: center;
     }
 
     .titleHeader{
         display: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        text-align: center;
     }
 
     .formHeader{
         margin: 0 auto !important;
+        width: 60% !important;
+        height: 70% !important;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        align-content: center;
+
+    }
+    .contact-form{
+        margin: 0 auto;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+        margin-top: 0px !important;
+        height: 70% !important;
         justify-content: center !important;
         align-items: center !important;
-        align-content: center !important;
         text-align: center !important;
-        width: 40%;
-    }
-
-    .contact-form{
-        /* display: none !important; */
-        justify-content: center !important;
-        align-items: center;
-        align-content: center;
-        text-align: center;
-        width: 40%;
+        align-content: center !important;
     }
 
 
