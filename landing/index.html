@@ -41,7 +41,7 @@
 
                     <!-- REVISAR ESTO-->
 
-                    <form class="contact-form">
+                    <form #formulario class="contact-form">
                         <div class="row g-1 align-items-center justify-content-center">
                             <div class="col-lg-4 col-xs-2">
                                 <div class="form-floating ">
@@ -122,8 +122,7 @@
 
     
     <section height="100vh" class="recurso">
-        <div class="container">
-            <!-- <div class="row gy-2"> -->
+        <div class="container divRecurso">
                 <div class="row gy-2">
                     <div class="col-sm-6 col-lg-3 cuadritos" data-aos="zoom-in-right" data-aos-delay="300">
                         <div class="cuadritoss">
@@ -176,7 +175,6 @@
                         </div>
                     </div>
                 </div>
-            <!-- </div> -->
         </div>
     </section>
 
@@ -187,23 +185,23 @@
                     <h2 class="titlecards">Vehículos según tu <b>necesidad</b></h2>
                 </div>
                 <div class="container">
-                    <div class="row gy-2">
+                    <!-- <div class="row gy-2"> -->
                         <div class="cards row gy-2">
-                            <div class="col-sm-6 col-lg-3 cuadritos ">
+                            <div class="col-sm-6 col-lg-3 icons ">
                                 <img width="200px" class="imgovereffect" src="./assets/Iconos/moto@2x.png"
                                     alt="">
                                 <h3>Moto</h3>
                             </div>
-                            <div class="col-sm-6 col-lg-3 cuadritos">
+                            <div class="col-sm-6 col-lg-3 icons">
                                 <img width="200px" src="./assets/Iconos/utilitario chico@2x.png" alt="">
                                 <h3>Utilitario chico</h3>
                             </div>
-                            <div class="col-sm-6 col-lg-3 cuadritos">
+                            <div class="col-sm-6 col-lg-3 icons">
                                 <img width="200px" src="./assets/Iconos/utilitario grande@2x.png" alt="">
                                 <h3>Utilitario grande</h3>
                             </div>
                         </div>
-                    </div>
+                    <!-- </div> -->
                 </div>
             </div>
         </section>
@@ -242,21 +240,21 @@
 
         <section class="container-fluid gris25-bg">
             <div class="container pt-3 pb-3">
-                <div class="row">
+                <div class="row fila">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12
                             col-xl-12">
-                        <h2 class="text-center morado-co" data-tdp="hr23">Preguntas Frecuentes</h2>
-                        <hr class="mx-auto d-block morado-bor mt-2">
+                        <h2 class="text-center morado-cu morado-co" data-tdp="hr23">Preguntas Frecuentes</h2>
                     </div>
                 </div>
-                <div class="row mt-3">
-                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 bg-ayuda"></div>
+                <div class="row mt-3 fila">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 bg-ayuda">
+                    </div>
                     <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 pr-2">
                         <div class="accordion" id="Restaurante">
                             <div class="card mt-2">
                                 <div class="card-header">
-                                    <button class="btn btn-link" type="button" data-toggle="collapse"
-                                        data-target="#collpase2" aria-expanded="true" aria-controls="collpase2"
+                                    <button class="btn btn-link" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collpase2" aria-expanded="true" aria-controls="collpase2"
                                         data-tdp="hr26">¿Cómo se cotiza el servicio?</button>
                                 </div>
                                 <div id="collpase2" class="collapse" data-parent="#Restaurante">
@@ -265,10 +263,9 @@
                             </div>
                             <div class="card mt-2">
                                 <div class="card-header">
-                                    <button class="btn btn-link" type="button" data-toggle="collapse"
-                                        data-target="#collpase3" aria-expanded="true" aria-controls="collpase3"
-                                        data-tdp="hr28">¿Es sólo un servicio
-                                        para empresas?</button>
+                                    <button class="btn btn-link" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collpase3" aria-expanded="true" aria-controls="collpase3"
+                                        data-tdp="hr28">¿Es sólo un servicio para empresas?</button>
                                 </div>
                                 <div id="collpase3" class="collapse" data-parent="#Restaurante">
                                     <p class="mt-1" data-tdp="hr29">Es un
@@ -280,8 +277,8 @@
                             </div>
                             <div class="card mt-2">
                                 <div class="card-header">
-                                    <button class="btn btn-link" type="button" data-toggle="collapse"
-                                        data-target="#collpase4" aria-expanded="true" aria-controls="collpase4"
+                                    <button class="btn btn-link" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collpase4" aria-expanded="true" aria-controls="collpase4"
                                         data-tdp="hr30">¿Cómo se cobra?</button>
                                 </div>
                                 <div id="collpase4" class="collapse" data-parent="#Restaurante">
@@ -293,8 +290,8 @@
                             </div>
                             <div class="card mt-2">
                                 <div class="card-header">
-                                    <button class="btn btn-link" type="button" data-toggle="collapse"
-                                        data-target="#collpase5" aria-expanded="true" aria-controls="collpase5"
+                                    <button class="btn btn-link" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collpase5" aria-expanded="true" aria-controls="collpase5"
                                         data-tdp="hr32">¿Qué es el seguimiento
                                         online?</button>
                                 </div>
@@ -308,8 +305,8 @@
                             </div>
                             <div class="card mt-2">
                                 <div class="card-header">
-                                    <button class="btn btn-link" type="button" data-toggle="collapse"
-                                        data-target="#collpase6" aria-expanded="true" aria-controls="collpase6"
+                                    <button class="btn btn-link" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collpase6" aria-expanded="true" aria-controls="collpase6"
                                         data-tdp="hr34">Servicios</button>
                                 </div>
                                 <div id="collpase6" class="collapse" data-parent="#Restaurante">
@@ -390,7 +387,7 @@
                                 <div class="slick-slide" data-slick-index="0" aria-hidden="true" tabindex="-1" style="width: 222px;">
                                     <div style="width: 100%; display:inline-block;">
                                         <div style="width: 100%; display:inline-block;">
-                                            <img src=https://rapiboy.com/img/LogosMarcas/Restaurante/kfc.png"> 
+                                            <img src="https://rapiboy.com/img/LogosMarcas/Restaurante/kfc.png"> 
                                         </div> 
                                     </div>
                                                 </div> 
@@ -560,7 +557,7 @@
             <div class="container svg pt-3 pb-3">
                 <hidden data-tdp-file="home_probaahorarestaurante.json" data-tdp-ignore=""></hidden>
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-7 col-lg-6 col-xl-6">
+                    <div class="col-xs-12 col-sm-12 col-md-7 col-lg-6 col-xl-6 footerItems">
                         <h2 class="text-left morado-co" style="font-size:1.9rem;">
                             <b data-tdp="hp1">Empezá ahora.</b>
                         </h2>
@@ -570,7 +567,7 @@
                         <p class="text-left mt-2 mb-2 morado-co" data-tdp="hp3">Escala
                             tu restaurante con esta tecnología
                         </p>
-                        <a class="btn btn-violeta btn-lg wow fadeInLeft" href="/NuevoRestaurante" target="_blank"
+                        <a class="btn btn-violeta btn-lg wow fadeInLeft" href="#formulario" target="_blank"
                             role="button" style="visibility: visible;
                                 animation-name: fadeInLeft;">
                             <span data-tdp="hp4">Probá Rapiboy</span>
@@ -630,8 +627,7 @@
     <script src="https://kit.fontawesome.com/f17f895862.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script>
         AOS.init({

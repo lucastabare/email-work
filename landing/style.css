@@ -122,11 +122,12 @@ p {
 
     .header{
         margin: 0 auto !important;
-        height: 70vh !important;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        align-content: center;
+        width: 100% !important;
+        height: 100% !important;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center !important;
+        align-content: center !important;
     }
 
     .titleHeader{
@@ -136,8 +137,13 @@ p {
         text-align: center;
     }
 
+    .container{
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+
     .formHeader{
-        width: 60%;
+        width: 400px !important;
         margin-top: 160px;
         align-items: center !important;
         align-content: center !important;
@@ -150,6 +156,7 @@ p {
         margin-left: 0px !important;
         margin-top: 0px !important; 
         margin-bottom: 0px !important; 
+        width: 400px !important;
     }
 
     .btn-lg{
@@ -162,11 +169,15 @@ p {
         height: 100% !important; 
     }
 
+    .divRecurso{
+        margin-top: 30px !important;
+    }
+
     .cuadritos{
-        width: 30% !important;
-        height: 30% !important;
-        background-image: none !important;
-        margin: 0px !important;
+        width: 150px !important;
+        height: 150px !important;
+        padding: 20px !important;
+        margin: 5px !important;
     }
 
     .cuadritoss img{
@@ -177,6 +188,7 @@ p {
 
     .cuadritos h4{
         font-size: 0.5rem;
+        line-height: 10px !important;
     }
 
     .integraciones img{
@@ -188,9 +200,11 @@ p {
     .vehiculos{
         background-image: none !important;
     }
+    
 
     .vehiculosFooter{
         background-image: none !important;
+        height: 70vh !important;
     }
 
     .vehiculosHeader{
@@ -217,39 +231,49 @@ p {
         flex-wrap: wrap !important;
     }
 
-    .vehiculosFooter .container .gy-2{
-        width: 30%;
-        margin: 0px auto;
+    .icons{
+        width: 200px !important;
+        height: 150px !important;
+        padding: 20px !important;
+        margin: 5px !important;
     }
 
-    .cuadritos img{
-        width: 150px;
+    .icons h3{
+        font-size: 1rem !important;
+    }
+
+    .cards{
+        flex-direction: column !important;
+    }
+
+    .icons img{
+        width: 100px;
     }
 
     /* 4ª PARTE: */
 
     .servicios{
-        width: 100%;
-        height: 100vh;
+        height: 800px !important;
+
     }
 
     .serviciosHeader{
-        background-image: url("./assets//recursos/servicios-mobile.png") !important; 
+        background-image: url("./assets/recursos/servicios-mobile.png") !important; 
         background-position: top left !important;
         width: 100% !important;
-        height: 35% !important;
+        height: 310px !important;
         background-size: 100% !important;
         display: block !important;
         padding: 15px !important;
         margin-top: 20px;
-        background-image: none !important;
     }
 
     .titleServicios{
         padding: 0px !important;
-        padding-top: 12rem !important;
-        color: #000 !important;
+        color: #fafafa !important;
         margin-left: 0px !important;
+        font-size: 1.5rem !important;
+        margin-top: 13rem !important;
     }
 
     .imgServicios{
@@ -257,13 +281,23 @@ p {
     }
 
     .serviciosInfo{
-
+        height: 450px !important;
     }
 
     .serviciosItem{
         background-size: 90% 80% !important;
+        padding: 20px !important;
+        height: 150px !important;
     }
 
+    .serviciosItem h3{
+        font-size: 1.5rem !important;
+        margin-top: 5px !important;
+    }
+
+    .serviciosItem h6{
+        font-size: 1rem !important;
+    }
     /* .ms-4{
         margin-left: 0px !important;
     }
@@ -271,7 +305,48 @@ p {
     .ms-5{
         margin-left: 0px !important;
     } */
+
+    /* 5ª PARTE: */
+
+    .fila{
+        flex-wrap: nowrap !important;
+    }
+
+    .bg-ayuda{
+        width: 40vw !important;
+    }
+
+    .pr-2{
+        width: 60vw;
+    }
+
+    .accordion .btn{
+        font-size: 0.75rem !important;
+        color: #292966;
+    }
+    
+    .morado-cu{
+        font-size: 2rem;
+    }
+
+
+    /* 6ª PARTE: */
+
+    .footerEmp{
+        background-image: url("./assets/recursos/footer-mobile.jpg") !important;
+    }
+
+    .footerItems{
+        margin-top:220px !important;
+        text-align: right !important;
+    }
+
+    .morado-bor{
+        border-top-color: #292966 !important;
+        opacity: 1 !important;
+    }
 }
+
 
 
 
@@ -541,11 +616,11 @@ p {
 }
 
 .ms-4{
-    margin-left: 100px !important;
+    margin-left: 100px; /*ver el important */
 }
 
 .ms-5{
-    margin-left: 160px !important;
+    margin-left: 160px;
 }
 
 /*Estilos Preguntas frecuentes: 5°PARTE: */
@@ -576,11 +651,16 @@ p {
 
 .accordion .card {
     background-color: transparent;
+    border: none;
+    border-radius: none;
+    text-decoration: none;
 }
 
 .accordion .card-header {
     padding: 0;
     background-color: transparent;
+    border: none;
+    text-decoration: none;
 }
 
 .btn:not(:disabled):not(.disabled){
@@ -612,7 +692,7 @@ p {
     padding: 0;
     font-size: 1.125rem;
     font-weight: 500;
-    color: #30AED5;
+    color: #292966;
 }
 
 .accordion .btn:hover {
@@ -757,7 +837,7 @@ p {
 /* Footer 6°PARTE */
 
 .footerEmp{
-    background-image: url("./assets/recursos/footer.jpg") !important;
+    background-image: url("./assets/recursos/footer.jpg") ;
     background-size: cover !important;
     background-repeat: no-repeat !important;
     height: 50vh !important;
@@ -776,8 +856,7 @@ p {
 }
 
 .morado-co {
-    color: #2C2A66;
-    
+    color: #2C2A66;   
 }
 
 .morado-bor {
