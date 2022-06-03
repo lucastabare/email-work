@@ -347,6 +347,9 @@ p {
         font-weight: 300;
     }
 
+    .itemCarosel{
+        width: 100px !important;
+    }
 
     /* 6ª PARTE: */
 
@@ -355,7 +358,7 @@ p {
     }
 
     .footerItems{
-        margin-top:240px !important;
+        margin-top:230px !important;
         text-align: right !important;
         padding-right: 0px !important;
         padding-left: 0px !important;
@@ -367,7 +370,7 @@ p {
     }
 
     .marcas{
-        width: 100vw !important;
+        height: 30vh !important;
     }
 
     /* 7ª PARTE: */
@@ -655,6 +658,11 @@ p {
 }
 
 /*Estilos Preguntas frecuentes: 5°PARTE: */
+
+.itemCarosel{
+    width: 100%;
+    display: inline-block;
+}
 
 .gris25-bg {
     background: #FAFAFA;
