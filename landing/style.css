@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 /*ESTILOS GENERALES:*/
 *{
     margin: 0;
@@ -12,6 +13,7 @@ html{
 
 body{
     background-color: #FBFDFF;
+    font-family: 'Varela Round', sans-serif;
 }
 
 body::-webkit-scrollbar {
@@ -61,7 +63,7 @@ hr {
 }
 
 .titleHeader h1 {
-    font-size: 4.5rem;
+    font-size: 4rem;
     font-weight: bold ;
 }
 
@@ -77,6 +79,7 @@ hr {
 .form{
     padding: 10px; 
     width:40% ;
+    height: 100% !important;
     margin-top: 30px;
     margin-left: 45%;
     background-color: #FBFDFF;
@@ -118,7 +121,7 @@ hr {
     .form{
         margin: 0 auto !important;
         width: 90% !important;
-        height: 100vh !important;
+        height: 100% !important;
         /* padding-top: 130px !important; */
         margin-top: 30px !important;
         text-align: center !important;
@@ -164,7 +167,6 @@ hr {
     background-position: center;
     align-items: center;
     justify-content: center;
-    margin: 10px ;
 }
 
 .gy-2{
@@ -257,9 +259,10 @@ hr {
 }
 
 .gy-md-2{
+    margin: 0 auto;
     width: 100%;
     margin-top: 40px;
-    margin: 20px;
+    
 }
 
 .iconsVehiculos{
@@ -307,6 +310,7 @@ hr {
         background-size: 100% !important;
         background-position: center !important;
         height: 300px !important;
+        width: 100% !important;
         display: flex !important;
         align-items: center !important;
         flex-wrap: wrap !important;
@@ -314,6 +318,7 @@ hr {
 
     .tittle h1{
         margin: 0 auto;
+        margin-left: 10px !important;
         padding: 0px;
         width: 250px !important; 
         padding-left: 5px !important;
@@ -327,8 +332,8 @@ hr {
 
     .contenedor{
         margin: 0 auto;
-        width: 100%;
-        height: 100%;
+        width: 100% !important;
+        height: 100vh !important;
     }
 
 }
@@ -657,6 +662,10 @@ hr {
 .social-link :hover{
     color: #2C2A66;
     text-decoration: none;
+}
+
+.end{
+    background-color: #33A2CC;
 }
 
 /*ESTILOS-mobile RAPIBOY: 7°PARTE: */

@@ -19,10 +19,13 @@
             delivery en Argentina? Regístrese ahora de forma gratuita.">
     <meta property="og:image" content="https://rapiboy.com/img/meta/rapiboy-web-metaimage-rapiboy.jpg">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"/>
 </head>
 
 <body>
@@ -191,22 +194,22 @@
             <div class="contenedor">
             <div class="row gy-md-2 hi-icon-wrap hi-icon-effect-1">
                 <div class="col-md-4 col-lg-4 col-xl-3 ">
-                <div class="iconsVehiculos hi-icon hi-icon-screen">
-                    <img src="./assets/Iconos/moto@2x.png" alt="cuadritox" />
+                <div class="iconsVehiculos ">
+                    <img class="iconVehiculos" src="./assets/Iconos/moto@2x.png" alt="cuadritox" />
                     <h4>Moto</h4>
                 </div>
                 </div>
                 <div class="col-md-1"></div>
                 <div class="col-md-4 col-lg-4 col-xl-3">
-                <div class="iconsVehiculos hi-icon hi-icon-screen">
-                    <img src="./assets/Iconos/utilitario chico@2x.png" alt="cuadritox" />
+                <div class="iconsVehiculos ">
+                    <img class="iconVehiculos" src="./assets/Iconos/utilitario chico@2x.png" alt="cuadritox" />
                     <h4>Utilitario chico</h4>
                 </div>
                 </div>
                 <div class="col-md-1"></div>
                 <div class="col-md-4 col-lg-4 col-xl-3">
-                <div class="iconsVehiculos hi-icon hi-icon-screen">
-                    <img src="./assets/Iconos/utilitario grande@2x.png" alt="cuadritox" />
+                <div class="iconsVehiculos ">
+                    <img class="iconVehiculos" src="./assets/Iconos/utilitario grande@2x.png" alt="cuadritox" />
                     <h4>Utilitario grande</h4>
                 </div>
                 </div>
@@ -413,7 +416,7 @@
             </div>
         </div>
         <div class="container pt-2 pb-2">
-            <div class="row">
+            <div class="row end">
                 <div class="col-xs-12 col-sm-12 col-md-9 col-lg-8 col-xl-8
                                         text-left sm-text-center">
                     <p class="textFooter">
@@ -425,8 +428,7 @@
                         <span class="underline">contacto@rapiboy.com</span>
                     </p>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4 col-xl-4
-                                        text-right sm-text-center sm-mt-2 textFooter">
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4 col-xl-4 text-right sm-text-center sm-mt-2 textFooter">
                     <a class="social-link" href="https://www.facebook.com/rapiboyargentina" target="_blank" role="button">
                         <i class="fab fa-facebook-f"></i>
                     </a>
@@ -453,7 +455,7 @@
     </script>
     <script src="https://kit.fontawesome.com/f17f895862.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
     <script>
         AOS.init({
@@ -471,10 +473,13 @@
     </script>
 
     <script>
-        // $( ".iconVehiculo" ).hover(function() {
-        //     console.log("imgovereffect");
-        //     $(this).addClass("animate__animated animate__bounce animate__repeat-2");
-        // });
+        $( ".iconsVehiculos" ).hover(function() {
+            console.log("imgovereffect");
+            $(this).addClass("animate__fadeOutRightBig");
+        });
+
+        // const element = document.querySelector('.iconVehiculos');
+        // element.hover.setProperty('animate__fadeOutRightBig', '0.5s');
     </script>
 </body>
 
