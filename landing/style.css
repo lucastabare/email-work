@@ -238,7 +238,7 @@ body::-webkit-scrollbar-button, body::-webkit-scrollbar-thumb {
     width:100%; 
     background-image: url("./assets/recursos/vehículos.png");
     background-repeat: no-repeat;
-    background-size: 30% 90%;
+    background-size: auto;
     background-position: bottom right;; 
 }
 
